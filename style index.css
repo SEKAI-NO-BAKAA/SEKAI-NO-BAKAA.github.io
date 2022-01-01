@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&family=Orbitron&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Genos:wght@100&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 
 body {
@@ -176,6 +176,7 @@ h3{
        background-color:white;
        padding: 10px 0px 100px 0;
        /* espace entre le titre et le dessus  */
+       font-family: 'Raleway', sans-serif;
     }
    #textIntro{
        padding: 0px 20%;
@@ -193,7 +194,10 @@ h3{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding: 30px 10% ;
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
     }
     .imageAMV h4 {
         font-family: 'Genos', sans-serif;
@@ -205,16 +209,17 @@ h3{
     }
     
     .imageAMV img {
-        border-radius: 20px;
+        border-radius: 00px;
         /* angle en haut/bas/gauche/droite */
-        box-shadow: 13px 13px 11px -1px rgba(0,0,0,0.49);
+        
+        box-shadow: 0px 10px 13px -7px #000000, 19px 18px 27px -7px rgba(0,0,0,0.37);
     }
 
     .imageAMV img:hover {
         /* hover=survolage avec souris */
-        opacity: 0.7;
+        opacity: 0.9;
 /* opacité quand on survolle avec la souris */
-        transform: scale(1.05);
+        transform: scale(1.03);
         /* grossissement de l'image */
         transition: 0.4s ease-in-out;
         /* temps pendant lequel ca grossit */
@@ -224,8 +229,8 @@ h3{
     #meconnaître{
         height: 340px;
         background-color: white;
-        padding: 100px 2%;
-        font-family: 'Noto Serif JP', serif;
+        padding: 50px 2%;
+        font-family: 'Raleway', sans-serif;
         text-align: center;
 
     }
