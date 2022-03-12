@@ -177,9 +177,21 @@ h3{
        padding: 10px 0px 100px 0;
        /* espace entre le titre et le dessus  */
        font-family: 'Raleway', sans-serif;
+       
     }
-   #textIntro{
-       padding: 0px 20%;
+  
+    #textIntro{
+        
+        
+        padding: 50px 2%;
+        
+        text-align: center;
+
+    }
+
+    #textIntro h2{
+        font-size: 40px;
+        font-style: italic;
     }
 
     #citation{

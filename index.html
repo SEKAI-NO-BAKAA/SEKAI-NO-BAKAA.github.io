@@ -88,14 +88,17 @@
             <section id="me contacter">
             <h2>Me contacter</h2>
             </section>
+
             
             
-            <form method="post" >
+            <form method="post" action="https://formspree.io/f/xzbovpzy" >
                 <!-- <label> Nom </label> : si on veut que du texte apparaisse devant la zone écrite -->
                 <input placeholder="Nom" type="text"  id="pseudo"  size="50" maxlength="30" autocomplete="off" class="form-control" name="nom"/>
                 <input placeholder="e-mail" type="email"  id="email" size="50" maxlength="30" required autocomplete="off" class="form-control" name="email"/>
                 <textarea id ="msg" placeholder="Vos questions ou vos recommandations..." autocomplete="off" name="message"></textarea> 
-            <button type="submit" name="valider">Envoyer</button>
+                <!-- <input id="boutonform" type="submit" value="Envoyer"> -->
+                <button type="submit" name="valider">Envoyer</button>
+
             </form>
             
             

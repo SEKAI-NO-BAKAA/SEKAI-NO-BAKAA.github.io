@@ -171,31 +171,40 @@
     </div> 
        
 </section>
+<footer>
+    <section id="mecontacter">
+    <h2>Me contacter</h2>
+    </section>
 
-        <footer id="me contacter">
-            <h2>Me contacter</h2>
-            <form>
-                <input placeholder="Nom">
-                <input placeholder="e-mail">
-                <textarea placeholder="Vos questions ou vos recommandations..."></textarea> 
-            <button>Envoyer</button>
-            </form>
-            <div id="deuxiemeTrait"></div>
-            <div id="copyrightEtIcons">
-                <div id="copyright">
-                    <span>© from Astabruti; 2021</span>
-                </div>
-                <div id="Icons">
-                    <a href="http://www.instagram.com"><i class="fa fa-instagram"target="_blank"></i></a>
-                    <a href="https://www.youtube.com/channel/UCcCvyNbUeKImSNcvmsgpAWQ" target="_blank"><i class="fa fa-youtube"></i></a>
-                    <a href="https://open.spotify.com/artist/39mYnZdgsASgNsKmQ0Hz3n?si=5LFTcslMTNu85wZw_wZ6SQ" target="_blank"><i class="fa fa-spotify"></i></a>
+    
+    
+    <form method="post" action="https://formspree.io/f/xzbovpzy" >
+        <!-- <label> Nom </label> : si on veut que du texte apparaisse devant la zone écrite -->
+        <input placeholder="Nom" type="text"  id="pseudo"  size="50" maxlength="30" autocomplete="off" class="form-control" name="nom"/>
+        <input placeholder="e-mail" type="email"  id="email" size="50" maxlength="30" required autocomplete="off" class="form-control" name="email"/>
+        <textarea id ="msg" placeholder="Vos questions ou vos recommandations..." autocomplete="off" name="message"></textarea> 
+        <!-- <input id="boutonform" type="submit" value="Envoyer"> -->
+        <button type="submit" name="valider">Envoyer</button>
 
-                </div>
+    </form>
+    
+    
+    <div id="deuxiemeTrait"></div>
+    <div id="copyrightEtIcons">
+        <div id="copyright">
+            <span>© from Astabruti; 2021</span>
+        </div>
+        <div id="Icons">
+            <a href="http://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCcCvyNbUeKImSNcvmsgpAWQ" target="_blank"><i class="fa fa-youtube"></i></a>
+            <a href="https://open.spotify.com/artist/39mYnZdgsASgNsKmQ0Hz3n?si=5LFTcslMTNu85wZw_wZ6SQ" target="_blank"><i class="fa fa-spotify"></i></a>
 
-            </div>
+        </div>
+
+    </div>
 
 
-        </footer>
+</footer>
 
 </body>
 

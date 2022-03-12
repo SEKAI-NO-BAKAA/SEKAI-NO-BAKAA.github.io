@@ -203,6 +203,13 @@ margin-top: 15px;
 
     /* ********************************FOTER********************* */
 
+    #mecontacter h2 {
+        text-transform:capitalize;
+        text-align: center;
+        padding: 20px;
+        font-size: 2rem ;
+        }
+
     footer {
 
         background-color:#524A3A;

@@ -219,72 +219,79 @@ margin-top: 15px;
  
      /* ********************************FOTER********************* */
  
-     footer {
- 
-         background-color:#524A3A;
-         color: #FFFAE1;
-         padding: 20px 0px 20px 0px;
-         text-align: center;
- 
-     }
-     form {
-         margin:0 auto;
-         max-width: 900px;
-     }
- 
-     input, textarea, button {
-         border: none;
-         width: 60%;
-         padding: 15px 10px;
-         margin: 10px 0;
-         font-size: 1.1em;
-         font-family: "Advent Pro", sans-serif;
-         border-radius: 8px;
-     }
-     textarea {
-         height: 140px;
-     }
-     button {
-         font-size: 1.3em;
-         background-color:#FFFAE1;
-     }
-     button:hover {
-         opacity: 0.8;
-         transform: scale(1.01);
-         transition: 0.4s ease-in-out;
-         background-color:grey;
-         color:black;
-         cursor:pointer;
-         transition: 0.3s ease-in-out;
-     }
-     #deuxiemeTrait {
-         height: 1px;
-         width: 75%;
-         background-color: #FFFAE1;
-         margin: 60px auto;
-     }
- 
-     #copyrightEtIcons {
-         display: flex;
-         margin-bottom: 20px;
-         /* marge par rapport au bas */
-         padding: 0 10%;
-         /* pour qu'ils soient collés chacun a leur coté */
-     }
-     #copyright {
-         width: 50%;
-         text-align: left;
-         color: #FFFAE1;
-     }
-     #Icons {
-         width: 50%;
-         text-align: right;
-     }
- 
-     #Icons a {
-         display: inline-block;
-         margin: 0 15px;
-         font-size: 1.3em;
-         color: red;
-     
-     }
+     #mecontacter h2 {
+        text-transform:capitalize;
+        text-align: center;
+        padding: 20px;
+        font-size: 2rem ;
+        }
+
+    footer {
+
+        background-color:#524A3A;
+        color: #FFFAE1;
+        padding: 20px 0px 20px 0px;
+        text-align: center;
+
+    }
+    form {
+        margin:0 auto;
+        max-width: 900px;
+    }
+
+    input, textarea, button {
+        border: none;
+        width: 60%;
+        padding: 15px 10px;
+        margin: 10px 0;
+        font-size: 1.1em;
+        font-family: "Advent Pro", sans-serif;
+        border-radius: 8px;
+    }
+    textarea {
+        height: 140px;
+    }
+    button {
+        font-size: 1.3em;
+        background-color:#FFFAE1;
+    }
+    button:hover {
+        opacity: 0.8;
+        transform: scale(1.01);
+        transition: 0.4s ease-in-out;
+        background-color:grey;
+        color:black;
+        cursor:pointer;
+        transition: 0.3s ease-in-out;
+    }
+    #deuxiemeTrait {
+        height: 1px;
+        width: 75%;
+        background-color: #FFFAE1;
+        margin: 60px auto;
+    }
+
+    #copyrightEtIcons {
+        display: flex;
+        margin-bottom: 20px;
+        /* marge par rapport au bas */
+        padding: 0 10%;
+        /* pour qu'ils soient collés chacun a leur coté */
+    }
+    #copyright {
+        width: 50%;
+        text-align: left;
+        color: #FFFAE1;
+    }
+    #Icons {
+        width: 50%;
+        text-align: right;
+    }
+
+    #Icons a {
+        display: inline-block;
+        margin: 0 15px;
+        font-size: 1.3em;
+        color: red;
+    
+    }
