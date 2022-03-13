@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Genos:wght@100&display=swap');
 
 
-
 *{
     
     padding: 0;
@@ -101,97 +100,142 @@ header .dropdown:hover .content a{
       background-color: transparent;
       
   }
-  
+
+  #auto-suggest{
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    top: 0px;
+   
+
+}
+
+  .search{
+    position: fixed;
+    float: right;
+    border: 1px solid black;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+        width: 18%;
+        /* padding: 15px 10px; */
+        margin: 20px 0;
+        font-size: 1.3em;
+        font-family: "Advent Pro", sans-serif;
+        border-radius: 8px;
+        right: 90px;
+        border-radius: 20px 0px 0px 20px;
+        text-align: center;
+}
+#btn{
+    position: fixed;
+    right: 20px;
+    top: 18px;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: rgb(61, 61, 61) ;
+    color: white;
+    border-radius: 0px 20px 20px 0px;
+    
+        font-size: 1.4em;
+        font-family: "Advent Pro", sans-serif;
+       
+}
 
 
 
 
+#auto-suggest .search:focus {
+	color:#555;border-color:#c8c8c8;	
+}
+
+#auto-suggest .suggestions {
+	width:36%;
+    position:absolute;
+    margin-top:47px;
+    left: 1482px;
+font-size: 1.4rem;
+    list-style-type:none;
+    border:1px solid #d5d4d4;
+    background:#fff;
+    
+}
 
 
+    
+   /* *************************Présentation************************* */
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    #présentation{
-        background-color:white;
-        padding: 10px 0px 100px 0;
-        /* espace entre le titre et le dessus  */
-     }
-    #textIntro{
-        padding: 100px 20% 10px;
-     }
-     #textIntro h1{
+   #présentation{
+       
+       background-color: white;
+       padding: 10px 0px 100px 0;
+       /* espace entre le titre et le dessus  */
+    }
+   #textIntro{
+       padding: 100px 20% 10px;
+    }
+    #textIntro h1{
         font-family: 'Orbitron', sans-serif;
-         text-align:left;
-         font-size:2.5em ;
-         margin: 15px;
-         font-weight: 3000;
-     }
-     #textIntro a {
-         display: inline-block;
-         margin: 0 01px;
-         font-size: 0.8em;
-         color: red;
-     }
-     #paroles h4{
-         font-family: 'Dancing Script', cursive;
-         text-align:left;
-         font-size:1.8em ;
-         margin: 50px 15px 30px 110px;
-         font-weight: 300;
-         }
-     
-     #paroles p{
-         padding: 30px 20% 50px;
-         column-count: 2;
-     }
- 
-     #image8 h4{
+        text-align:left;
+        font-size:2.5em ;
+        margin: 15px;
+        font-weight: 3000;
+    }
+    #textIntro a {
+        display: inline-block;
+        margin: 0 01px;
+        font-size: 0.8em;
+        color: red;
+    }
+    #paroles h4{
+        font-family: 'Dancing Script', cursive;
+        text-align:left;
+        font-size:1.8em ;
+        margin: 50px 15px 30px 110px;
+        font-weight: 300;
+        }
+    
+    #paroles p{
+        padding: 30px 20% 50px;
+        column-count: 2;
+    }
+
+    #image8 h4{
         font-family: 'Noto Serif JP', serif;
-         text-align:center;
-         font-size:1.8em ;
-         margin: 15px;
-         font-weight: 300;
-         }
-     #image8 img{
-         width: 600px;
-         height: 400px;
-   display: block;
-   margin-left: auto;
-   margin-right: auto;;
-     }
-     #image8 img{
-         border-radius: 20px;
-         /* angle en haut/bas/gauche/droite */
-         box-shadow: 13px 13px 11px -1px rgba(0,0,0,0.49);
-     }
- 
- 
-     
- 
-     #image8 img:hover {
-         /* hover=survolage avec souris */
-         opacity: 0.7;
-         /* opacité quand on survolle avec la souris */
-         transform: scale(1.05);
-         /* grossissement de l'image */
-         transition: 0.4s ease-in-out;
-         /* temps pendant lequel ca grossit */
- 
-     }
- 
-     #vidéo{
+        text-align:center;
+        font-size:1.8em ;
+        margin: 15px;
+        font-weight: 300;
+        }
+    #image8 img{
+        width: 600px;
+        height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;;
+    }
+    #image8 img{
+        border-radius: 20px;
+        /* angle en haut/bas/gauche/droite */
+        box-shadow: 13px 13px 11px -1px rgba(0,0,0,0.49);
+    }
+
+
+    
+
+    #image8 img:hover {
+        /* hover=survolage avec souris */
+        opacity: 0.7;
+        /* opacité quand on survolle avec la souris */
+        transform: scale(1.05);
+        /* grossissement de l'image */
+        transition: 0.4s ease-in-out;
+        /* temps pendant lequel ca grossit */
+
+    }
+
+    #vidéo{
         
         width: 600px;
          height: 400px;
@@ -200,23 +244,24 @@ header .dropdown:hover .content a{
    margin-right: auto;
 margin-top: 15px;   
      }
-     #meconnaître{
-         height: 340px;
-         background-color: #f1f2f6;
-         padding: 100px 2%;
-         font-family: 'Noto Serif JP', serif;
-         text-align: center;
- 
-     }
- 
-     #meconnaître h2{
-         font-size: 40px;
-         font-style: italic;
-     }
- 
-     /* ********************************FOTER********************* */
- 
-     #mecontacter h2 {
+
+    #meconnaître{
+        height: 340px;
+        background-color: #f1f2f6;
+        padding: 100px 2%;
+        font-family: 'Noto Serif JP', serif;
+        text-align: center;
+
+    }
+
+    #meconnaître h2{
+        font-size: 40px;
+        font-style: italic;
+    }
+
+    /* *************************************************** */
+
+    #mecontacter h2 {
         text-transform:capitalize;
         text-align: center;
         padding: 20px;
@@ -236,7 +281,9 @@ margin-top: 15px;
         max-width: 900px;
     }
 
-    input, textarea, button {
+    .footer input, 
+    textarea,
+    button {
         border: none;
         width: 60%;
         padding: 15px 10px;

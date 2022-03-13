@@ -39,18 +39,16 @@ color:lightskyblue;
     font-family: 'Dancing Script', cursive;
     background-color: transparent;
     font-weight: bold;
-    float:right;
+    
     font-size: 1.4em;
     text-decoration: none;
-    
     }
 
-#contact{
-    float: right;
-    margin-left: auto;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 1.4em;
-}
+    #contact{
+        float: left;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 1.2rem;
+    }
 header a {
     text-decoration: none;
     color:lightskyblue;

@@ -15,16 +15,15 @@
     font-family: 'Dancing Script', cursive;
     background-color: transparent;
     font-weight: bold;
-    float:right;
+    
     font-size: 1.4em;
     text-decoration: none;
     }
 
     #contact{
-        float: right;
-        margin-left: auto;
+        float: left;
         font-family: 'Orbitron', sans-serif;
-        font-size: 1.4em;
+        font-size: 1.2rem;
     }
 header a {
     text-decoration: none;
