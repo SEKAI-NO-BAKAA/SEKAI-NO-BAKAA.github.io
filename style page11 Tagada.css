@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&family=Orbitron&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Genos:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 
 *{
@@ -59,10 +62,12 @@ header .dropdown{
     position: relative;
     height: 100%;
     display: flex;
+    width: 5%;
 }
 
 header .dropdown .content{
     display: none;
+    
 }
 header .dropdown:hover .content{
     display: block;
@@ -94,6 +99,7 @@ header .dropdown:hover .content a{
     display: inline-block;
     font-size: 1.4em;
     cursor: pointer;
+    width: 100%;
   }
 
   .bouton:hover{
@@ -110,7 +116,7 @@ header .dropdown:hover .content a{
 
 }
 
-  .search{
+  #search{
     position: fixed;
     float: right;
     border: 1px solid black;
@@ -127,16 +133,16 @@ header .dropdown:hover .content a{
         border-radius: 20px 0px 0px 20px;
         text-align: center;
 }
-#btn{
+.button{
     position: fixed;
-    right: 20px;
+    right: 33px;
     top: 18px;
     cursor: pointer;
     border: 1px solid black;
     background-color: rgb(61, 61, 61) ;
     color: white;
     border-radius: 0px 20px 20px 0px;
-    
+    width: 2%;
         font-size: 1.4em;
         font-family: "Advent Pro", sans-serif;
        
@@ -283,7 +289,7 @@ margin-top: 15px;
 
     .footer input, 
     textarea,
-    button {
+    .footer button {
         border: none;
         width: 60%;
         padding: 15px 10px;
@@ -295,11 +301,11 @@ margin-top: 15px;
     textarea {
         height: 140px;
     }
-    button {
+    .footer button {
         font-size: 1.3em;
         background-color:#FFFAE1;
     }
-    button:hover {
+    .footer button:hover {
         opacity: 0.8;
         transform: scale(1.01);
         transition: 0.4s ease-in-out;

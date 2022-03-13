@@ -40,7 +40,10 @@
         </div>
     </div>
     <div id="contact"><a href="#me contacter">Me Contacter</a></div>
-    
+    <form id="auto-suggest"  method="post">
+        <input type="search" id="search" name="search" value="" placeholder="Rechercher ..." autocomplete="off"   onchange="ouvrirPage()"  onfocus="if(this.value=='Rechercher...')this.value=''" onblur="if(this.value=='')this.value='Rechercher...'" />
+        <input type="submit" id="btn" value="Chercher" onclick="ouvrirPage()">
+        </form>
 </header>
 
 
@@ -200,7 +203,7 @@
 
     
     
-    <form method="post" action="https://formspree.io/f/xzbovpzy" >
+    <form  class="footer" method="post" action="https://formspree.io/f/xzbovpzy" >
         <!-- <label> Nom </label> : si on veut que du texte apparaisse devant la zone écrite -->
         <input placeholder="Nom" type="text"  id="pseudo"  size="50" maxlength="30" autocomplete="off" class="form-control" name="nom"/>
         <input placeholder="e-mail" type="email"  id="email" size="50" maxlength="30" required autocomplete="off" class="form-control" name="email"/>
@@ -227,7 +230,7 @@
 
 
 </footer>
-
+<script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

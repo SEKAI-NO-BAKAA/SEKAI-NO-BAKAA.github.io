@@ -1,12 +1,17 @@
 window.onload = function(){
 	var motsClefs = [
-		'Lettre au major',
-		'Loli',
-		'Bakaa',
-		'Personne',
-		'Tagada',
-		'Elle',
-		'Bobu'
+		'Tagada' ,
+'Merci Major',
+'Loli',
+'Elle',
+'Souvenirs',
+'Bakaa',
+'Personne',
+'Oublie moi',
+'Tu as aimé la mort',
+'Cendres',
+'Bête de foire',
+'Lettre au major',
 	];
 	
 	var form = document.getElementById("auto-suggest");
@@ -61,14 +66,42 @@ window.onload = function(){
 	};
 };
 
+
 function ouvrirPage()
 {
-  var a = document.getElementById("search").value;
+  var a = document.getElementById("search").value ;
   
-  if (a === "Lettre Au Major" || a==="Lettre au major" || a==="Lettre" || a==="lettre au major"){
+  
+
+ if  (a === "Loli" || a==="loli" || a==="LOLI" || a==="lolii" || a==="Lolii"){
+    window.open("page1.html","_self") ;
+}else if  (a === "Elle" || a==="elle" || a==="ELLE" || a==="l" || a==="L"){
+    window.open("page2.html","_self") ;
+}else if  (a === "Souvenirs" || a==="SOUVENIRS" || a==="souvenirs" || a==="Souvenir" || a==="SOUVENIR" || a==="souvenir") {
+    window.open("page3.html","_self") ;
+}else if  (a === "Bakaa" || a==="Bakaa" || a==="BAKAA" || a==="BAKA" || a==="baka" || a==="Baka"){
+    window.open("page4.html","_self") ;
+}else if  (a === "Personne" || a==="PERSONNE" || a==="personne" || a==="Personnes" || a==="PERSONNES" || a==="personnes") {
+    window.open("page5.html","_self") ;
+}else if  (a === "Oublie moi" || a==="OUBLIE MOI" || a==="oublie moi" || a==="Oublie Moi" || a==="oublie Moi" || a==="OUBLIEMOI") {
+    window.open("page6.html","_self") ;
+}else if  (a === "T'as aimé la mort" || a==="Tu as aimé la mort" || a==="TU AS AIME LA MORT" || a==="T'as Aimé La Mort" || a==="Tu as aimé la mort" || a==="T AS AIME LA MORT"){
+    window.open("page7.html","_self") ;
+}else if  (a === "Cendres" || a==="CENDRES" || a==="cendres" || a==="cendre" || a==="CENDRE" || a==="Cendre"){
+    window.open("page8.html","_self") ;
+}else if  (a === "Bete de foire" || a==="bete de foire" || a==="BETE DE FOIRE" || a==="Bête de foire" || a==="Bête de foire" || a==="Bêtes de foire"){
+    window.open("page9.html","_self") ;
+}else if  (a === "Lettre Au Major" || a==="Lettre au major" || a==="Lettre" || a==="lettre au major"){
     window.open("page10.html","_self") ;
+}else if  (a === "Tagada" || a==="TAGADA" || a==="tagada" || a==="tagadaa" || a==="TaGaDa" || a==="tAgAdA") {
+    window.open("page11 Tagada.html","_self") ;
+}else if  (a === "Merci Major" || a==="merci major" || a==="Merci major" || a==="MERCI MAJOR" || a==="Merci" || a==="MERCI" || a==="merci"){
+    window.open("pageViolet.html","_self") ;
+
+
+
 }
-   
+
   else {
         window.open("erreur.html","_self");
       }

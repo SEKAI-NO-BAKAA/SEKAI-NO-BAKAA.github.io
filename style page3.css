@@ -100,6 +100,78 @@ header .dropdown:hover .content a{
       background-color: transparent;
       
   }
+
+
+  #auto-suggest{
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    top: 0px;
+   
+
+}
+
+  #search{
+    position: fixed;
+    float: right;
+    border: 1px solid black;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+        width: 18%;
+        /* padding: 15px 10px; */
+        margin: 20px 0;
+        font-size: 1.3em;
+        font-family: "Advent Pro", sans-serif;
+        border-radius: 8px;
+        right: 90px;
+        border-radius: 20px 0px 0px 20px;
+        text-align: center;
+}
+#btn{
+    position: fixed;
+    right: 20px;
+    top: 18px;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: rgb(61, 61, 61) ;
+    color: white;
+    border-radius: 0px 20px 20px 0px;
+    
+        font-size: 1.4em;
+        font-family: "Advent Pro", sans-serif;
+       
+}
+
+
+
+
+#auto-suggest .search:focus {
+	color:#555;border-color:#c8c8c8;	
+}
+
+#auto-suggest .suggestions {
+	width:36%;
+    position:absolute;
+    margin-top:47px;
+    left: 1482px;
+font-size: 1.4rem;
+    list-style-type:none;
+    border:1px solid #d5d4d4;
+    background:#fff;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
     #présentation{
         background-color: white;
         padding: 10px 0px 100px 0;
@@ -214,7 +286,7 @@ margin-top: 15px;
         max-width: 900px;
     }
 
-    input, textarea, button {
+    .footer input, textarea, button {
         border: none;
         width: 60%;
         padding: 15px 10px;
