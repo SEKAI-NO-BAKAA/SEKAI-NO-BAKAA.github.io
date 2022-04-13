@@ -12,6 +12,7 @@ window.onload = function(){
 'Cendres',
 'Bête de foire',
 'Lettre au major',
+'Encore une fois',
 	];
 	
 	var form = document.getElementById("auto-suggest");
@@ -97,7 +98,8 @@ function ouvrirPage()
     window.open("page11 Tagada.html","_self") ;
 }else if  (a === "Merci Major" || a==="merci major" || a==="Merci major" || a==="MERCI MAJOR" || a==="Merci" || a==="MERCI" || a==="merci"){
     window.open("pageViolet.html","_self") ;
-
+}else if  (a === "Encore une fois" || a==="encore une fois" || a==="ENCORE UNE FOIS" || a==="Encore Une Encore" || a==="Encore une Fois" || a==="encore" || a==="Encore"){
+		window.open("page12 Encore une fois.html","_self") ;
 
 
 }
