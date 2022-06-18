@@ -13,6 +13,7 @@ window.onload = function(){
 'Bête de foire',
 'Lettre au major',
 'Encore une fois',
+'Fuis moi'
 	];
 	
 	var form = document.getElementById("auto-suggest");
@@ -100,8 +101,8 @@ function ouvrirPage()
     window.open("pageViolet.html","_self") ;
 }else if  (a === "Encore une fois" || a==="encore une fois" || a==="ENCORE UNE FOIS" || a==="Encore Une Encore" || a==="Encore une Fois" || a==="encore" || a==="Encore"){
 		window.open("page12 Encore une fois.html","_self") ;
-
-
+}else if  (a === "Fuis Moi" || a==="FUIS MOI" || a==="Fuis moi" || a==="fuis moi" || a==="Fuis" || a==="fuis" || a==="FUIS" || a==="FUISMOI" || a==="FuisMoi" || a==="fuismoi"){
+	window.open("page13 Fuis moi.html","_self") ;
 }
 
   else {
