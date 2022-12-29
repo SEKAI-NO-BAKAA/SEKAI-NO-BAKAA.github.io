@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Orbitron:wght@500&display=swap');
+@import url('htpps://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+}
+
+
+
+#logo a{
+padding-top: 5px;
+padding-left: 5px;
+position: fixed;
+
+z-index: 2;
+text-decoration: none;
+}
+#logo img{
+    border-radius: 100%;
+    width: 5rem;
+}
+.slider-container{
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-slide{
+    height: 100vh;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform .5s ease-in-out;
+}
+
+.left-slide > div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* border-right: solid .01px white; */
+}
+
+.left-slide h1{
+    font-size: 40px;
+    
+}
+
+.right-slide{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.right-slide > div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+#fautpas_gauche{
+    background: linear-gradient(180deg, rgba(177,65,78,1) 10%, rgba(139,45,56,1) 20%, rgba(115,24,34,1) 35%, rgba(91,6,32,1) 50%, rgba(64,1,32,1) 65%, rgba(45,6,25,1) 80%, rgba(20,2,11,1) 95%);
+} 
+.right-slide #asuna{
+    background: linear-gradient(180deg, rgba(177,65,78,1) 10%, rgba(139,45,56,1) 20%, rgba(115,24,34,1) 35%, rgba(91,6,32,1) 50%, rgba(64,1,32,1) 65%, rgba(45,6,25,1) 80%, rgba(20,2,11,1) 95%);
+}
+
+#bulle_gauche{
+    background: linear-gradient(180deg, rgba(1,1,8,1) 10%, rgba(18,18,115,1) 45%, rgba(56,56,96,1) 95%);
+}
+.right-slide #bulle{
+    background: linear-gradient(180deg, rgba(1,1,8,1) 10%, rgba(18,18,115,1) 45%, rgba(56,56,96,1) 95%);
+}
+
+#saki_gauche{
+    background: linear-gradient(180deg, rgba(56,56,96,1) 15%, rgba(6,6,40,1) 45%, rgba(1,1,8,1) 95%);
+}
+.right-slide #saki{
+    background: linear-gradient(180deg, rgba(56,56,96,1) 15%, rgba(6,6,40,1) 45%, rgba(1,1,8,1) 95%);
+}
+
+#destin_gauche{
+    background: linear-gradient(180deg, rgba(20,9,2,1) 10%, rgba(181,44,11,1) 50%, rgba(177,65,78,1) 95%);
+}
+.right-slide #destin{
+    background: linear-gradient(180deg, rgba(20,9,2,1) 10%, rgba(181,44,11,1) 50%, rgba(177,65,78,1) 95%);
+}
+
+#jeuduloup_gauche{
+    background: linear-gradient(180deg, rgba(56,56,96,1) 10%, rgba(24,24,55,1) 45%, rgba(1,1,8,1) 95%);
+}
+.right-slide #jeuduloup{
+    background: linear-gradient(180deg, rgba(56,56,96,1) 10%, rgba(24,24,55,1) 45%, rgba(1,1,8,1) 95%);
+}
+
+
+.right-slide #asuna img,
+.right-slide #bulle img,
+.right-slide #destin img,
+.right-slide #saki img,
+.right-slide #jeuduloup img
+{
+    width: 48vw;
+    height: 57.5vh;
+    left: 7vw;
+    margin-top: 9vw;
+    margin-left: 8vw ;
+}
+
+
+.slider-container .action-buttons button{
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 100;
+    
+}
+
+.slider-container .action-buttons 
+.down-button{
+    transform: translateX(-100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.slider-container .action-buttons 
+.up-button{
+    transform: translateY(-100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+button{
+    background-color: white;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+
+}
+
+button:hover{
+    color: violet;
+}
+
+button:focus{
+    outline: none;
+
+}
+
+@media screen and (max-width: 1500px) {
+    
+    .left-slide{
+        width: 40%;
+        text-align: center;
+    }
+    .left-slide h1{
+        font-size: 30px;
+        
+    }
+   
+    .right-slide{
+        left: 40%;
+    }
+
+    .slider-container .action-buttons button{
+        position: absolute;
+        left: 40%;
+        
+        
+    }
+    button{
+        
+        font-size: 14px;
+        
+    
+    }
+    #fautpas_gauche h1{
+        font-size: 28px;
+    }
+
+
+    .right-slide #asuna img,
+.right-slide #bulle img,
+.right-slide #destin img,
+.right-slide #saki img,
+.right-slide #jeuduloup img
+{
+    width: 50vw;
+height: 25vw;
+margin-top: 37vh;
+margin-left: 7vw;
+   
+}
+
+
+}
+
+@media screen and (max-width: 750px) {
+    
+.left-slide{
+    width: 45%;
+    text-align: center;
+}
+.left-slide h1{
+    font-size: 24px;
+    
+}
+#saki_gauche h1{
+    font-size: 18px;
+}
+#jeuduloup_gauche h1{
+    font-size: 20px;
+}
+.right-slide{
+    left: 45%;
+}
+
+.slider-container .action-buttons button{
+    position: absolute;
+    left: 45%;
+    
+    
+}
+button{
+        
+    font-size: 12px;
+    
+
+}
+.right-slide #asuna img,
+.right-slide #bulle img,
+.right-slide #destin img,
+.right-slide #saki img,
+.right-slide #jeuduloup img
+{
+    width: 40vw;
+    height: 18vh;
+    margin-top: 41vh;
+    margin-left: 12vw;
+   
+}
+}

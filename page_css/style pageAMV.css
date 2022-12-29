@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Genos:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Orbitron:wght@500&display=swap');
+@import url('htpps://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* *,
+*:before,
+*:after{
+    
+} */
+html{
+  font-size: 10px;
+}
+body{
+  text-align: center;
+  background: white;
+  transition: 0.2s linear;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  }
+
+li {
+  list-style-type:none;
+  color: black;
+}
+
+
+header{
+  background-color: white;
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  box-shadow: 0 0 24px 0 rgba(0,0,0,.9);
+}
+
+
+
+#logo{
+
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  /* float:left; */
+  font-size: 3rem;
+  /* text-decoration: none; */
+  
+  }
+  
+
+header a {
+  text-decoration: none;
+  color:black;
+  padding: 0.5rem 2rem;
+  
+  }
+
+header > a,
+header .bouton{
+  background-color: transparent;
+  color: black;
+  margin: 0rem 2rem 0rem 2rem;
+ 
+  font-size: 1.4rem;
+}
+header .bouton{
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 2.6rem;
+}
+header .dropdown{
+  position: relative;
+  height: 100%;
+  display: flex;
+  
+}
+
+header .dropdown .content{
+  display: none;
+  font-size: 1.6rem;
+}
+header .dropdown:hover .content{
+  display: block;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 7rem;
+  /* car height de 70 px dans le header */
+  width: 80%;
+  padding: 0.5rem 1rem;
+  box-sizing:content-box;
+  background-color: white;
+}
+header .dropdown:hover .content a{
+  color: black;
+  font-family: 'Orbitron', sans-serif;
+}
+header #contact{
+  
+  
+  /* float:left; */
+  font-size: 3rem;
+}
+
+/* a:after{
+  content: "";
+  position: absolute;
+  background-color: #ff3c78;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+a:hover{
+  color: black;
+}
+a:hover:after{
+  width: 5%;
+} */
+
+
+
+.bouton {
+  background-color: transparent;
+  border: none;
+  color: #181818;
+  font-family: "Advent Pro", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.4rem;
+  cursor: pointer;
+  
+
+}
+
+.bouton:hover{
+    background-color: transparent;
+    
+}
+
+#search{
+ 
+  color:#373736;
+  margin-top: 9rem;
+  font-size: 2rem;
+  line-height: 5rem;
+  background-color:#eceeef;
+  
+  width:50vw;
+}
+
+#searchbarre {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5vw;
+}
+
+.button {
+  font-size: 2.1rem;
+    line-height: 5rem;
+    max-width: 90px;
+    width: 10vw;
+}
+.button,input{
+  background-color:transparent;
+  border: none;
+  padding: 15px 10px;
+  
+  font-size: 2.1rem;
+  line-height: 5rem;
+  font-family: "Advent Pro", sans-serif;
+  
+  border-radius: 8px;
+}
+button:hover {
+  opacity: 0.8;
+  transform: scale(1.01);
+  transition: 0.4s ease-in-out;
+  background-color:grey;
+
+  cursor:pointer;
+  transition: 0.3s ease-in-out;
+}
+
+#auto-suggest .search:focus {
+  color:#555;border-color:#c8c8c8;	
+}
+
+#auto-suggest .suggestions {
+  width: 50vw;
+  position: absolute;
+  margin-top: -7px;
+  font-size: 1.6rem;
+  list-style-type: none;
+  border: 1px solid #fff;
+  background: #fff;
+  opacity: 1;
+  left: 23%;
+  cursor:pointer ;
+  color: black;
+}
+
+/* carte AMV */
+
+div.gallery {
+    display: inline-block;
+    margin: 0.5rem;
+    background-color: white;
+    width: auto;
+    padding-bottom: 1.6rem;
+    
+    
+    
+    
+  }
+   .gallery a{
+    
+    list-style-type:none;
+    color:#FFAFAF;
+    text-decoration: none; 
+  }
+  div.gallery img:hover {
+    background-color: white;
+    opacity: 0.9;
+    transform: scale(1.03) ;
+  }
+  
+  div.gallery img {
+    width: 30vw;
+    height: 25vw;
+  }
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1050px) {
+      
+  div.gallery img {
+    width: 40vw;
+    height: 35vw;
+    margin-left: 25px;
+    margin-right: 25px;
+    
+  }
+  div.desc {
+    text-align: center;
+    background-color: white;
+    border: none;
+    
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.2;}
+}
+@media screen and (max-width: 800px) {
+      
+  div.gallery img {
+    width: 80vw;
+    height: 55vw;
+    margin-left: 25px;
+    margin-right: 25px;
+    
+  }
+ 
+}
+
+@media screen and (min-width: 1806px) {
+      
+  div.gallery img {
+    width: 800px;
+    height: 550px;
+  margin-left: 35px;
+  margin-right: 35px;
+  }
+  div.desc {
+    text-align: center;
+    background-color: white;
+    border: none;
+    
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.2;}
+}
