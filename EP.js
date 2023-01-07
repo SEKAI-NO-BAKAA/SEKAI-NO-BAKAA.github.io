@@ -1,7 +1,7 @@
 const sliderContainer = document.querySelector('.slider-container');
 
-const slideRight = document.querySelector('.right-slide');
-const slideLeft = document.querySelector('.left-slide');
+const slideRight = document.querySelector('.left-slide');
+const slideLeft = document.querySelector('.right-slide');
 
 const upButton = document.querySelector('.up-button');
 const downButton = document.querySelector('.down-button');
@@ -13,8 +13,8 @@ let activeSlideIndex = 0;
 slideLeft.style.top = `-${(slidesLength - 1) * 100}vh`;
 
 //Add EventLinerter to the buttons
-upButton.addEventListener('click', () => changeSlide('up'));
-downButton.addEventListener('click', () => changeSlide('down'));
+upButton.addEventListener('click', () => changeSlide('down'));
+downButton.addEventListener('click', () => changeSlide('up'));
 
 const changeSlide = (direction) => {
     const sliderHeight = sliderContainer.clientHeight;
