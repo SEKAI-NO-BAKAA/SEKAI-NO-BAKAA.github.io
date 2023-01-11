@@ -107,6 +107,11 @@
           letter-spacing: .5px;
   line-height: 25px;
       }
+      h1{
+        font-size: 3rem;
+        margin-top: 2rem;
+        text-align: center;
+      }
       #description a {
            display: inline-block;
            margin: 0 01px;

@@ -198,9 +198,10 @@ max-width: 773px;
     }
     #collaborateurs .collab1,
     #collaborateurs .collab2,
-    #collaborateurs .collab3{
+    #collaborateurs .collab3,
+    #collaborateurs .collab4{
         display: table-cell;
-        width: 33.3%;
+        width: 25%;
         text-align: center;
         position: relative;
         /* background-color: rgb(243, 154, 154); */
