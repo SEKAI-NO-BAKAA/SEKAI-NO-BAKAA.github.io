@@ -421,12 +421,14 @@ width: 4%;
         min-width: 520px;
         max-height: 292px;
     }
-
+   
+    
+    
     #collaborateurs button {
-        min-width: 210px;
+        min-width: 180px;
     }
     #collaborateurs a{
-        font-size: 21px;
+        font-size: 18px;
     }
     #vide1,#vide2{
         width: 25%;

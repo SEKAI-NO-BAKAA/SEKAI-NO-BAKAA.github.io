@@ -30,5 +30,9 @@ left: 50%;
 transform: translate(-50%, -50%);
 }
 #description{
-    padding: 2rem;
+    padding-top: 5rem;
+}
+
+#vidéo{
+  padding-top: 0;
 }

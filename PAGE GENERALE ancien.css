@@ -107,6 +107,7 @@
           letter-spacing: .5px;
   line-height: 25px;
       }
+      
       h1{
         font-size: 3rem;
         margin-top: 2rem;
@@ -134,8 +135,12 @@
   display: table;
   
   width: 100%;
+  padding-top: 100px;
   
+    }
   
+    #vidéo h4{
+      padding-bottom: 20px;
     }
     #vide_vidéo1,
     #vide_vidéo2{

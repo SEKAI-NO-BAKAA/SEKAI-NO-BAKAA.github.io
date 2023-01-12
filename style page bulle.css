@@ -1,72 +1,70 @@
-#introson img{
-    width: 250px;
-    position: absolute;
-    z-index: -1;
-    left: 37%;
-    top: -13%;
-    }
+#introson img {
+  width: 250px;
+  position: absolute;
+  z-index: -1;
+  left: 37%;
+  top: -13%;
+}
 
-#refrain img{
-    width: 400px;
-    position: absolute;
-    z-index: -1;
-    left: 48%;
-    top: -14%;
-        }
-#couplet1 img{
-    width: 410px;
-    position: absolute;
-    z-index: -1;
-    left: 29%;
-    top: -30%;
-            
+#refrain img {
+  width: 400px;
+  position: absolute;
+  z-index: -1;
+  left: 48%;
+  top: -14%;
 }
-#refrain2 img{
-    width: 353px;
-    position: absolute;
-    z-index: -1;
-    left: 50%;
-    top: -7%;
-    opacity: 19;
+#couplet1 img {
+  width: 410px;
+  position: absolute;
+  z-index: -1;
+  left: 29%;
+  top: -30%;
 }
-#couplet2 img{
-    width: 521px;
-    position: absolute;
-    z-index: -1;
-    left: 27%;
-    top: -6%;
+#refrain2 img {
+  width: 353px;
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: -7%;
+  opacity: 19;
 }
-#prerefrain img{
-    width: 300px;
-    position: absolute;
-    z-index: -1;
-    left: 51%;
-    top: 16%;
+#couplet2 img {
+  width: 521px;
+  position: absolute;
+  z-index: -1;
+  left: 27%;
+  top: -6%;
 }
-#refrain3 img{
-    width: 340px;
-    position: absolute;
-    z-index: -1;
-    left: 41%;
-    top: -16%;
-    }
-    #vidéo {
-        padding-bottom:50px ;
-    }
-    @media screen and (max-width: 1806px) {
-        #vide_vidéo1 .vide1,
-        #vide_vidéo1 .vide2,
-        #vide_vidéo1 .vide3,
-        #vide_vidéo2 .vide1,
-        #vide_vidéo2 .vide2,
-        #introson img,
-        #refrain img,
-        #couplet1 img,
-        #refrain2 img,
-        #prerefrain img,
-        #refrain3 img,
-        #couplet2 img
-        {
-            width: 0px;
-        }
-      }
+#prerefrain img {
+  width: 300px;
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  top: 16%;
+}
+#refrain3 img {
+  width: 340px;
+  position: absolute;
+  z-index: -1;
+  left: 41%;
+  top: -16%;
+}
+#vidéo {
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 1806px) {
+  #vide_vidéo1 .vide1,
+  #vide_vidéo1 .vide2,
+  #vide_vidéo1 .vide3,
+  #vide_vidéo2 .vide1,
+  #vide_vidéo2 .vide2,
+  #introson img,
+  #refrain img,
+  #couplet1 img,
+  #refrain2 img,
+  #prerefrain img,
+  #refrain3 img,
+  #couplet2 img {
+    width: 0px;
+  }
+}
