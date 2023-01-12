@@ -4,3 +4,25 @@
     height: 50vh;
   }
 }
+.test2 .easter-egg
+{
+  display : none;
+}
+
+.test2:hover .defaut
+{
+  display : none;
+}
+
+.test2:hover .easter-egg
+{
+  display : initial;
+}
+
+.easter-egg{
+    font-size: 1.2rem;
+    
+}
+#auteur p{
+    width: 58%;
+}
