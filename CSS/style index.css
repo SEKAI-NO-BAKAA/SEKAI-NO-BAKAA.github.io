@@ -1,0 +1,650 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Genos:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Orbitron:wght@500&display=swap");
+@import url("htpps://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dosis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Advent Pro", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f8f9fe;
+  /* background-color: #CFC7D2; */
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-transform: capitalize;
+  text-align: center;
+  padding-top: 50;
+  font-size: 3rem;
+}
+
+/* ************************************Navigation***************** */
+header {
+  background-color: white;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  opacity: 1;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.9);
+  z-index: 2;
+  top: 0;
+}
+#logo {
+  font-family: "Dancing Script", cursive;
+
+  font-weight: bold;
+
+  font-size: 3rem;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 20px;
+  font-family: "Oleo Script Swash Caps", cursive;
+}
+
+header > a,
+header button {
+  background-color: transparent;
+  color: black;
+  margin: 0 20px 0 0;
+
+  font-size: 2.4rem;
+}
+
+header button {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+header .dropdown {
+  position: relative;
+  height: 100%;
+  display: flex;
+  font-size: 1.5rem;
+}
+header .dropdown .content {
+  display: none;
+}
+header .dropdown:hover .content {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  /* car height de 70 px dans le header */
+  width: 150%;
+  padding: 5px 10px;
+  box-sizing: content-box;
+  background-color: white;
+  /* background-image: url(https://cdn.discordapp.com/attachments/659765201666572298/921134577643323412/thumb-1920-632051.png); */
+}
+header .dropdown:hover .content a {
+  color: black;
+  font-family: "Orbitron", sans-serif;
+}
+#contact {
+  float: left;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.8rem;
+}
+.bouton {
+  background-color: transparent;
+  border: none;
+
+  font-family: "Advent Pro", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.4rem;
+  cursor: pointer;
+}
+.bouton:hover {
+  background-color: transparent;
+}
+#search {
+  color: #373736;
+  margin-top: 9rem;
+  font-size: 2rem;
+  line-height: 5rem;
+  background-color: #eceeef;
+
+  width: 50vw;
+}
+
+#searchbarre {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5vw;
+}
+
+.button {
+  font-size: 2.1rem;
+  line-height: 5rem;
+  max-width: 90px;
+  width: 10vw;
+}
+.button,
+input {
+  background-color: transparent;
+  border: none;
+  padding: 15px 10px;
+
+  font-size: 2.1rem;
+  line-height: 5rem;
+  font-family: "Advent Pro", sans-serif;
+
+  border-radius: 8px;
+}
+button:hover {
+  opacity: 0.8;
+  transform: scale(1.01);
+  transition: 0.4s ease-in-out;
+  background-color: grey;
+
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+#auto-suggest .search:focus {
+  color: #555;
+  border-color: #c8c8c8;
+}
+
+#auto-suggest .suggestions {
+  width: 50vw;
+  position: absolute;
+
+  left: 22%;
+  font-size: 2rem;
+  list-style-type: none;
+  border: 1px solid #d5d4d4;
+  background: #fff;
+  cursor: pointer;
+  top: 175px;
+}
+
+/* ******************image principale********** */
+
+#imagePrincipale {
+  padding-top: 100px;
+
+  background: url(https://cdn.discordapp.com/attachments/659765201666572298/1022946616967180369/bakaabannv58.jpg)
+    no-repeat 50% 50%;
+  background-size: cover;
+  /* pour que le fond couvre tout l'écran peut importe la taille de ce dernier et qu'il ne bouge pas (effet de style)  */
+  height: 460px;
+
+  image-orientation: revert;
+  /* filter: brightness(150%) */
+}
+#imagePrincipale h1 {
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  color: #2f2f2f;
+  /* color: #6700ff; */
+  font-size: 55px;
+  margin-top: -80px;
+  text-shadow: 4px 4px 6px rgb(0, 0, 0);
+}
+
+#premierTrait {
+  height: 2px;
+  width: 15%;
+  margin: -3px auto;
+  /* auto=centrer */
+  background-color: #939393;
+  box-shadow: 4px 4px 6px rgb(0, 0, 0);
+}
+h3 {
+  font-family: "Noto Serif JP", serif;
+  text-align: center;
+  color: #000000;
+  font-size: 3em;
+  text-shadow: 4px 4px 6px rgb(0, 0, 0);
+}
+
+.buttonn {
+  font-family: "Orbitron", sans-serif;
+  font-size: 35px;
+  text-decoration: none;
+  color: #2f2f2f;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  position: absolute;
+
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 50px 0 0 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  transition: opacity 0.4s;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: 12.5rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 5px;
+  width: 40%;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  font-size: 1.8rem;
+}
+.popup .cross {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 5rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+  color: #333;
+}
+.popup .cross:hover {
+  opacity: 0.7;
+  transform: scale(1.03);
+  transition: 0.4s ease-in-out;
+}
+
+/* *************************Présentation************************* */
+
+#présentation {
+  /* background: linear-gradient(0deg, rgba(67,9,121,1) 0%, rgba(65,9,118,1) 50%, rgba(77,71,105,1) 100%); */
+  /* background: linear-gradient(0deg, rgba(42,44,101,1) 0%, rgba(68,70,135,1) 51%, rgba(80,83,154,1) 90%); */
+  /* background: linear-gradient(0deg, rgba(49,58,113,1) 0%, rgba(82,93,157,1) 20%, rgba(176,187,254,1) 85%); */
+  background: linear-gradient(
+    0deg,
+    rgb(49, 58, 113) 0%,
+    rgb(98, 129, 185) 26%,
+    rgb(176, 204, 236) 72%,
+    rgb(176, 187, 253) 100%
+  );
+  padding: 10px 0px 100px 0;
+  /* espace entre le titre et le dessus  */
+  font-family: "Raleway", sans-serif;
+}
+
+#textIntro {
+  display: table;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+}
+#videIntro,
+#videIntro2 {
+  display: table-cell;
+  width: 25%;
+}
+#cellule_textIntro {
+  display: table-cell;
+}
+
+#textIntro h2 {
+  font-size: 55px;
+  /* font-family: 'Press Start 2P', cursive; */
+  font-family: "Montserrat", sans-serif;
+}
+
+#citation {
+  font-family: "Dancing Script", cursive;
+
+  text-align: center;
+  /* color:crimson; */
+  color: #3c000c;
+  font-size: 2em;
+  padding: 5px 20%;
+}
+
+#image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.imageAMV h4 {
+  /* font-family: 'Genos', sans-serif; */
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+  font-size: 4rem;
+  margin: 15px;
+
+  /* si on ne met qu'une valeur dans margin cela signifie que ca s'applique en haut en bas et a gauche/droite */
+}
+
+.imageAMV img {
+  box-shadow: 0px 10px 13px -77px #000, 19px 18px 27px -7px rgba(0, 0, 0, 0.37);
+  width: 40vw;
+  height: 30vw;
+  margin-left: 48px;
+  margin-right: 48px;
+
+  border-radius: 15px;
+  /* angle en haut/bas/gauche/droite */
+}
+
+.imageAMV img:hover {
+  /* hover=survolage avec souris */
+  opacity: 0.9;
+  /* opacité quand on survolle avec la souris */
+  transform: scale(1.03);
+  /* grossissement de l'image */
+  transition: 0.4s ease-in-out;
+  /* temps pendant lequel ca grossit */
+  box-shadow: 0px 25px 23px -17px #000000,
+    19px 18px 27px -7px rgba(0, 0, 0, 0.37);
+}
+
+/* ep du bakaa */
+.imageEP {
+  text-align: center;
+  padding-bottom: 50px;
+  /* background-color: #5081ac; */
+  /* background-color: #348AA7; */
+  /* background-color: #6279B8; */
+  /* background: linear-gradient(0deg, rgba(55,6,101,1) 0%, rgba(67,9,121,1) 100%); */
+  background: linear-gradient(
+    0deg,
+    rgba(25, 25, 64, 1) 15%,
+    rgba(49, 58, 113, 1) 85%
+  );
+  /* angle en haut/bas/gauche/droite */
+}
+.imageEP h4 {
+  /* font-family: 'Orbitron', sans-serif; */
+  font-family: "Cinzel Decorative", cursive;
+  text-align: center;
+  font-size: 3.5rem;
+  margin: 0px;
+  padding: 15px;
+
+  /* si on ne met qu'une valeur dans margin cela signifie que ca s'applique en haut en bas et a gauche/droite */
+}
+.imageEP img {
+  width: 36vw;
+  height: 36vw;
+  box-shadow: 5px 10px 13px -7px #000000,
+    19px 18px 27px -7px rgba(0, 0, 0, 0.37);
+  text-align: center;
+  border-radius: 400px;
+  /* angle en haut/bas/gauche/droite */
+}
+
+.imageEP img:hover {
+  transform: scale(1.05);
+  /* grossissement de l'image */
+  transition: 0.8s ease-in-out;
+  /* temps pendant lequel ca grossit */
+  opacity: 0.9;
+}
+/* fin ep du bakaa */
+
+#meconnaître {
+  /* background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(55,6,101,1) 81%); */
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 7%,
+    rgba(25, 25, 64, 1) 85%
+  );
+  /* background-color: #CFC7D2; */
+  padding: 50px 2%;
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
+
+#meconnaître h2 {
+  font-size: 40px;
+  /* font-family: 'Rubik Iso', cursive; */
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ********************************FOTER********************* */
+
+footer {
+  /* background-color:#93747D; */
+  /* background-color:#C8BDC0; */
+  /* background-color:#524A3A; */
+  background: rgb(0, 0, 0);
+  color: #fffae1;
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+}
+footer form {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+footer input,
+textarea,
+button {
+  border: none;
+  width: 60%;
+  padding: 15px 10px;
+  margin: 10px 0;
+  font-size: 1.8rem;
+  font-family: "Advent Pro", sans-serif;
+  border-radius: 8px;
+  background-color: white;
+}
+footer textarea {
+  height: 140px;
+  resize: none;
+}
+footer button {
+  font-size: 1.8rem;
+  background-color: #fffae1;
+}
+
+#deuxiemeTrait {
+  height: 1px;
+  width: 75%;
+  background-color: #fffae1;
+  margin: 60px auto;
+}
+
+#copyrightEtIcons {
+  display: flex;
+  margin-bottom: 20px;
+  /* marge par rapport au bas */
+  padding: 0 10%;
+  /* pour qu'ils soient collés chacun a leur coté */
+}
+#copyright {
+  width: 50%;
+  text-align: left;
+  color: #fffae1;
+}
+#Icons {
+  width: 50%;
+  text-align: right;
+}
+
+#Icons a {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 1.8em;
+  color: red;
+}
+
+@media screen and (min-width: 1806px) {
+  .progress {
+    height: 3.5vh;
+    width: 40%;
+    max-width: 760px;
+  }
+
+  .box h1 {
+    top: 46.3vh;
+    left: 33vw;
+  }
+
+  .num {
+    top: 40vh;
+    left: 30vw;
+  }
+
+  .lettre {
+    font-size: 60px;
+  }
+  #imagePrincipale {
+    background-position: 0px -172px;
+    background-size: center;
+  }
+  .imageAMV img {
+    box-shadow: 0px 10px 13px -7px #000000,
+      19px 18px 27px -7px rgba(0, 0, 0, 0.37);
+    width: 47vw;
+    height: 27vw;
+
+    border-radius: 00px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  #citation {
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+
+    font-size: 5rem;
+    padding: 5px 20%;
+  }
+  footer {
+    color: #fffae1;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    /* margin-top: 80px; */
+  }
+  .imageEP img {
+    width: 30vw;
+    height: 30vw;
+  }
+
+  .fondu-out {
+    opacity: 0;
+    transition: opacity 1.8s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .progress {
+    width: 60%;
+    min-width: 300px;
+    left: 18%;
+  }
+  .box h1 {
+    top: 46.3vh;
+    left: 28vw;
+  }
+  .num {
+    top: 40vh;
+    left: 22vw;
+  }
+  .lettre {
+    font-size: 30px;
+  }
+  #imagePrincipale {
+    background-position: 0px 110px;
+    height: 300px;
+    background-size: cover;
+  }
+
+  .imageAMV img {
+    box-shadow: 0px 10px 13px -7px #000000,
+      19px 18px 27px -7px rgba(0, 0, 0, 0.37);
+    width: 74vw;
+    height: 45vw;
+
+    border-radius: 00px;
+    margin-left: 50px;
+  }
+  .imageEP img {
+    width: 70vw;
+    height: 70vw;
+  }
+  #meconnaître {
+    font-size: 1.5rem;
+  }
+  #citation {
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+
+    font-size: 4rem;
+    padding: 5px 20%;
+  }
+  footer {
+    color: #fffae1;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+  }
+  .fondu-out {
+    opacity: 0;
+    transition: opacity 1.8s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .popup {
+    width: 60%;
+    font-size: 1.4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .progress {
+    left: 15%;
+  }
+  .box h1 {
+    top: 46.3vh;
+    left: 33.9vw;
+  }
+  .num {
+    top: 40vh;
+    left: 23vw;
+  }
+  .lettre {
+    font-size: 15px;
+  }
+  .fondu-out {
+    opacity: 0;
+    transition: opacity 1.8s ease-in-out;
+  }
+}

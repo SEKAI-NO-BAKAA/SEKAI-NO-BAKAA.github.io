@@ -1,0 +1,74 @@
+#introson img {
+  width: 423px;
+  position: absolute;
+  z-index: -1;
+  left: 31%;
+  top: -27%;
+  opacity: 15%;
+}
+
+#refrain img {
+  width: 461px;
+  position: absolute;
+  z-index: -1;
+  left: 49%;
+  top: 9%;
+  opacity: 20%;
+}
+
+#couplet1 img {
+  width: 750px;
+  position: absolute;
+  z-index: -1;
+  left: 21%;
+  top: -10%;
+  opacity: 15%;
+}
+
+#refrain2 img {
+  width: 500px;
+  position: absolute;
+  z-index: -1;
+  left: 49%;
+  top: 33%;
+  opacity: 19%;
+}
+
+#couplet2 img {
+  width: 700px;
+  position: absolute;
+  z-index: -1;
+  left: 22%;
+  top: -10%;
+  opacity: 15%;
+}
+
+#prerefrain img {
+  width: 500px;
+  position: absolute;
+  z-index: -1;
+  left: 49%;
+  top: 29%;
+  opacity: 19%;
+}
+
+#vidéo {
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 1806px) {
+  #vide_vidéo1 .vide1,
+  #vide_vidéo1 .vide2,
+  #vide_vidéo1 .vide3,
+  #vide_vidéo2 .vide1,
+  #vide_vidéo2 .vide2,
+  #introson img,
+  #refrain img,
+  #couplet1 img,
+  #refrain2 img,
+  #prerefrain img,
+  #refrain3 img,
+  #couplet2 img {
+    width: 0px;
+  }
+}
