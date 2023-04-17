@@ -1,0 +1,47 @@
+<div class="youtube-subscribers">
+    <p class="count"></p>
+    <p class="text">abonnés</p>
+</div>
+
+<style>
+    .youtube-subscribers {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.youtube-subscribers p {
+    margin: 0;
+}
+
+.youtube-subscribers .count {
+    margin-right: 5px;
+}
+
+</style>
+
+
+<script>
+    // Remplacez "CHANNEL_ID" par l'identifiant de votre chaîne YouTube
+const channelId = "UCLAbSnoznWcoEkjdb7cMC3g";
+const apiKey = "AIzaSyCjaqYqdRqTw4cu-stkDwiTAWos0-bp41s";
+
+// Requête à l'API YouTube pour récupérer le nombre d'abonnés de la chaîne
+fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${UCLAbSnoznWcoEkjdb7cMC3g}&key=${AIzaSyCjaqYqdRqTw4cu-stkDwiTAWos0-bp41s}`)
+    .then(response => response.json())
+    .then(data => {
+        const count = data.items[0].statistics.subscriberCount;
+        const subscribers = document.querySelector(".youtube-subscribers .count");
+        subscribers.innerText = count;
+    })
+    .catch(error => console.error(error));
+
+</script>
