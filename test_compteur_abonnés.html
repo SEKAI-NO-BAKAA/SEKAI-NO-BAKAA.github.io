@@ -35,7 +35,7 @@ const channelId = "UCLAbSnoznWcoEkjdb7cMC3g";
 const apiKey = "AIzaSyCjaqYqdRqTw4cu-stkDwiTAWos0-bp41s";
 
 // Requête à l'API YouTube pour récupérer le nombre d'abonnés de la chaîne
-fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${UCLAbSnoznWcoEkjdb7cMC3g}&key=${AIzaSyCjaqYqdRqTw4cu-stkDwiTAWos0-bp41s}`)
+fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${channelId}&key=${apiKey}`)
     .then(response => response.json())
     .then(data => {
         const count = data.items[0].statistics.subscriberCount;
