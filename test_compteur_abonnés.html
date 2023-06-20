@@ -2,6 +2,13 @@
     <p class="count"></p>
     <p class="text">abonnés</p>
 </div>
+<!-- <div class="instagram">
+    <span class="instagram__count">0</span>
+    <span class="instagram__text">abonnés</span>
+  </div> -->
+  
+
+
 
 <style>
     .youtube-subscribers {
@@ -26,6 +33,28 @@
     margin-right: 5px;
 }
 
+
+
+.instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* .instagram__count {
+  margin-right: 10px;
+}
+
+.instagram__text {
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 5px;
+} */
+
 </style>
 
 
@@ -43,5 +72,20 @@ fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${chann
         subscribers.innerText = count;
     })
     .catch(error => console.error(error));
+
+// const followerCount = document.querySelector('.instagram__count');
+// fetch('https://www.instagram.com/bakaa_musique/?__a=1')
+//   .then(response => response.json())
+//   .then(data => {
+//     const count = data.graphql.user.edge_followed_by.count;
+//     followerCount.textContent = count.toLocaleString();
+//   })
+//   .catch(error => {
+//     console.error('Error fetching Instagram follower count:', error);
+//   });
+
+
+
+
 
 </script>

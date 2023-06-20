@@ -1,0 +1,174 @@
+<!-- <!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Upload</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script language="JavaScript">
+            function display_photo(p_name,p_w,p_h,p_legend) {
+               if (self.innerWidth) {
+                  winwidth = self.innerWidth;
+                  winheight = self.innerHeight;
+               }
+               else if (document.documentElement && document.documentElement.clientWidth) {
+                  winwidth = document.documentElement.clientWidth;
+                  winheight = document.documentElement.clientHeight;
+               }
+               else if (document.body) {
+                  winwidth = document.body.clientWidth;
+                  winheight = document.body.clientHeight;
+               }
+               if (Number(p_w) < winwidth) winwidth = Number(p_w);
+               if (Number(p_h) < winheight) winheight = Number(p_h);
+               winwidth += 8; winheight += 40;
+            pwin=window.open("","","toolbar=0,location=0,directories=0,status=0,menubar=0,resizable=1,scrollbars=yes,copyhistory=0,width="+winwidth+",height="+winheight+",left=10,top=10" );
+               pwin.document.write("<html><head>" );
+               pwin.document.write("<title>Zoom</title>" );
+               pwin.document.write("<style type=text/css>" );
+               pwin.document.write("body {" );
+               pwin.document.write("margin:0;" );
+               pwin.document.write("padding:0;" );
+               pwin.document.write("color:white;" );
+               pwin.document.write("background-color:black; }" );
+               pwin.document.write("</style>" );
+               pwin.document.write("</head>" );
+               pwin.document.write("<body>" );
+               pwin.document.write("<img src="+p_name+" width="+p_w+" height="+p_h+">" );
+               pwin.document.write("<table noborder width=100%><tr>" );
+               pwin.document.write("<form><td align=left>"+p_legend+"</td>" );
+               pwin.document.write("<td align=right><input type='button' value='Fermer' onClick='window.close()'></td>" );
+               pwin.document.write("</tr></table></form>" );
+               pwin.document.write("</body></html>" );
+            }
+            </script>
+    </head>
+    <body>
+        <form action="submit-form.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="user-file">
+            <input type="submit" value="Upload">
+          </form>
+
+
+<a href="javascript:display_photo('ASSETS/abysse.jpg','80%','60%','Une légende')">
+<img src="ASSETS/abysse.jpg">
+</a>
+
+       
+    </body>
+    
+<script src="reception.php"></script>
+</html>
+     -->
+
+     <body>
+      <div class="container">
+        <div class="textblock">
+          <h1 class="title">By Shibayt22</h1>
+          <h4 class="sub-title">Made for Bakaa my love</h4>
+          <p>Voila petit cadeau fait pour mon bakaa d'amour j'espère ça va lui plaire</p>
+          <p>Bakaa-musique</p>
+          <a href="https://instagram.com/shibayt22?igshid=YmMyMTA2M2Y=" class="btn" target="_blank">Aller voir son compte</a>
+        </div>
+        <img src="https://cdn.discordapp.com/attachments/604719839592054794/1066731305817083935/IMG_20230122_154859.jpg" alt="">
+      </div>
+    </body>
+
+    <style>
+      
+      *{
+  box-sizing:border-box;
+      }
+  
+  body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(22, 22, 22);
+    display:flex;
+    flex-direction:column;
+  
+  }
+  
+  .container{
+    width: 1000px;
+    margin: auto;
+    height: 600px;
+    background-color:rgb(136, 136, 136);
+    padding: 4rem 5rem;
+    position: relative;
+    border-radius: 5px;
+  }
+  
+  .textblock{
+    width: 45%;
+    font-family: popins,sans-serif;
+    
+    
+  }
+  .textblock .title{
+   text-align: center;
+   text-transform: uppercase;
+   color: rgb(0, 0, 0);
+   margin-bottom:1.5rem;
+   text-shadow:1px 1px 1px #919191, 
+               1px 2px 1px #919191, 
+               1px 3px 1px #919191, 
+               1px 4px 1px #919191, 
+               1px 5px 1px #919191, 
+               1px 6px 1px #919191, 
+               1px 7px 1px #919191, 
+               1px 8px 1px #919191, 
+               1px 9px 1px #919191, 
+               1px 10px 1px #919191,
+               1px 18px 6px rgb(16 16 16 / 40%), 
+               1px 22px 10px rgb(16 16 16 / 20%), 
+               1px 25px 35px rgb(16 16 16 / 20%), 
+               1px 30px 60px rgb(16 16 16 / 40%)
+  }
+  
+  .textblock .sub-title{
+   text-align:center;
+   font-size:1.2rem;
+   color: #FFAFAF;
+   margin-bottom:1.8rem;
+  }
+  
+  .textblock p{
+    margin-bottom:1.3rem;
+  }
+  
+  a.btn{
+    border: 1px solid #FFAFAF;
+    color: #FFAFAF;
+    padding: 1.2rem 2.2rem;
+    margin-top:1.5rem;
+    display:inline-block;
+    text-decoration:none;
+  }
+  
+  .container img{
+   position: relative;
+    top: -65%;
+    right: -60%;
+    box-shadow: 5px 4px 30px rgb(52 52 52 / 84%);
+    width: 700px;
+    height: 450px;
+    user-select: none;
+  }
+
+  @media only screen and (max-width:1500px) 
+{
+   .container{
+      width: 90%;
+
+   }
+   .container .textblock{
+      width: 100%;
+   }
+   .container img{
+     display: none;
+   }
+}
+
+    </style>
