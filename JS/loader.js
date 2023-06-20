@@ -7,9 +7,9 @@ $(document).ready(function(){
 
   
 
-  // setTimeout(() => {
-  //   document.querySelector('.preloader').style.display = "none"
-  // }, 4300); 
+  setTimeout(() => {
+    document.querySelector('.preloader').style.display = "none"
+  }, 4300); 
 
 
   const loader = document.querySelector('.preloader');
@@ -20,8 +20,12 @@ $(document).ready(function(){
     
     
 
-}, 0000);
+}, 4000);
 // changer en 4000
+
+
+
+
 
 
 

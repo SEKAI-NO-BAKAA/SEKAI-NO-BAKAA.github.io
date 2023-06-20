@@ -1,3 +1,9 @@
+ //pour que le refresh de la page fasse remonter en haut de la page 
+ window.addEventListener('beforeunload', function() {
+	document.documentElement.scrollTop = 0;
+  });
+
+
 window.onload = function(){
 	var motsClefs = [
 'Tagada' ,
