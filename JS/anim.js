@@ -60,6 +60,23 @@
   const variable5 = document.querySelectorAll('.cursor');
   observeAndAnimate(variable5);
 
+  const variable6 = document.querySelectorAll('#cellule_textIntro');
+  observeAndAnimate(variable6);
+
+  const variable7 = document.querySelectorAll('.description');
+  observeAndAnimate(variable7);
+
+  const variable8 = document.querySelectorAll('#pseudo');
+  observeAndAnimate(variable8);
+
+  const variable9 = document.querySelectorAll('#email');
+  observeAndAnimate(variable9);
+
+  const variable10 = document.querySelectorAll('#msg');
+  observeAndAnimate(variable10);
+
+  const variable11 = document.querySelectorAll('.valid');
+  observeAndAnimate(variable11);
 // ********
 // Pour la page de bulle 
 // ********
@@ -77,3 +94,20 @@ const saki = document.querySelectorAll('#saki');
 observeAndAnimate(saki);
   
   
+const network = document.querySelectorAll('.social-network');
+observeAndAnimate(network);
+
+
+// page AMVS
+
+const gallery = document.querySelectorAll('.gallery');
+observeAndAnimate(gallery);
+
+const desc = document.querySelectorAll('.desc');
+observeAndAnimate(desc);
+
+const container = document.querySelectorAll('#container');
+observeAndAnimate(container);
+
+const crea = document.querySelectorAll('.crea');
+observeAndAnimate(crea);
