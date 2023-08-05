@@ -9,7 +9,7 @@
         <meta name="keywords" content="Bakaa musique, AMVS, Son, hyperpop, sad, ep, tristes histoires,sokuu">
        
        
-        
+        <link rel="stylesheet" href="../CSS/page animation.css">
         <link rel="stylesheet" href="../CSS/page GENERALE nouveau.css">
         <link rel="stylesheet" href="../CSS/style page faut pas t'en faire.css">
 
@@ -24,12 +24,20 @@
             referrerpolicy="no-referrer"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"> 
                 
-        
+           <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MK7YJFLP5M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MK7YJFLP5M');
+</script>
     </head>
     
 <body>
     <nav class="navbar light-mode" role="navigation">
-        <div class="navbar__logo"><a href="index.html">Accueil</a></div> 
+        <div class="navbar__logo"><a href="../index.html">Accueil</a></div> 
    
         <ul class="navbar__links">
           <li class="navbar__link first"><a href="page AMV.html">AMV</a></li>
@@ -44,18 +52,15 @@
     <div id="imageson">
         <div id="table-row">
         <div id="minia">
-            
-        <img src="../ASSETS/faut pas t'en faire.jpg" title="Tu touches à Asuna t'es mort" alt="miniature du son de bulle: premier son de l'ep Tristes Histoires">
-    
-    </div>
+        <div class="card">
+            <img class="miniature" src="../ASSETS/faut pas t'en faire.jpg" title="Tu touches à Asuna t'es mort" alt="miniature du son de bulle: premier son de l'ep Tristes Histoires">
+        </div>
+        </div>
     <!-- faire flotter à droite de la minia -->
-    <div id="auteur">
-        <p> Faut pas t'en faire-Bakaa </p>
+    <div class="auteur">
+        <h1><span>Faut pas t'en faire-Bakaa</span></h1>
             <hr />
-        <p>
-         EP Tristes Histoires 
-                
-        </p>
+        <h2><span>EP Tristes Histoires</span></h2>
     </div>
     </div>
 </div>
@@ -78,7 +83,7 @@
     <div id="Textintro">   
         <div id="vide1"></div>
         <p id="description">
-            <!-- 🎶Tu me dis faut pas t'en faire🎶 <br>
+            🎶Tu me dis faut pas t'en faire🎶 <br>
                       
             Faut pas t'en faire est le dernier track de mon EP : Tristes histoires <br>
             
@@ -94,16 +99,18 @@
             Il y aura 5 AMV sur les 5 sons sortis<br>
                        
             J'espère vous avoir touché avec cet EP et ce son. <br>
-            Je remercie Osiris toujours à m'accompagner et à m'aider pour la correction.<br>
+            J'aime cet anime de tout mon cœur... <br>
+
+Que ça soit son histoire ou sa romance... <br>
+
+Asuna.....     Kirito....             🖤 <br>
+<br>
             
             Sur ce ...
             
             
-            Sayonara 🌸 -->
-           <img class="shiro" src="../ASSETS/shiro.gif" height="500vh" width="650vw" alt="loli qui danse"> <br>
-            Prochainement quand j'aurais pas la flemme de faire l'amv...
-            </p>
-            <div id="vide2"></div>
+            Sayonara 🌸
+          
     </div>
 
     <div id="vidéo">
@@ -114,8 +121,7 @@
              
         </div>
         <div id="aperçu">
-            <iframe  src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1I_WTSWObkI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </div>
         <div id="vide_vidéo2">
             <img class="vide1" src="" alt="">
             <img class="vide2" src="" alt="">
@@ -231,7 +237,7 @@ Et t'oublies ce que c'est de vivre
 
     <script src="./assets/jquery.min.js" type="text/javascript" ></script>
     <script src="./assets/bootstrap.js" type="text/javascript" ></script>
-    
+    <script type="text/javascript" src="../JS/anim.js"></script>
     <script type="text/javascript" src="../JS/script.js"></script>
     <script type="text/javascript" src="../JS/menu.js"></script>
 </body>

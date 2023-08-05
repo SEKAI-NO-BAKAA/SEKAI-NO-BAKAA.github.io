@@ -12,6 +12,7 @@
         
         <link rel="stylesheet" href="../CSS/page GENERALE nouveau.css">
         <link rel="stylesheet" href="../CSS/style page destin.css">
+        <link rel="stylesheet" href="../CSS/page animation.css">
 
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
@@ -24,13 +25,21 @@
             referrerpolicy="no-referrer"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"> 
                 
-        
+   <!-- Google tag (gtag.js) -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-MK7YJFLP5M"></script>
+   <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+   
+     gtag('config', 'G-MK7YJFLP5M');
+   </script>
     </head>
     
 <body>
     
     <nav class="navbar light-mode" role="navigation">
-        <div class="navbar__logo"><a href="index.html">Accueil</a></div> 
+        <div class="navbar__logo"><a href="../index.html">Accueil</a></div> 
    
         <ul class="navbar__links">
           <li class="navbar__link first"><a href="page AMV.html">AMV</a></li>
@@ -44,22 +53,22 @@
     <div id="imageson">
         <div id="table-row">
         <div id="minia">
-            
-        <img src="../ASSETS/destin.png" alt="miniature du son de bulle: premier son de l'ep Tristes Histoires">
-    
+<div class="card">
+        <img class="miniature" src="../ASSETS/destin.png" alt="miniature du son de destin: son de l'ep Tristes Histoires">
+    </div>
     </div>
     <!-- faire flotter à droite de la minia -->
-    <div id="auteur">
-        <p class="test2"> 
-            <span class="defaut"> Destin</span><span class="easter-egg">T4K!.oPP.D3Stiiny </span>
-            -Bakaa 
+    <div class="auteur">
 
-        </p>
+        <h1 class="test2"> 
+            <span class="defaut"> Destin</span>
+            <!-- <span class="easter-egg">T4K!.oPP.D3Stiiny </span> -->
+            <span>-Bakaa</span>
+
+        </h1>
+        
             <hr />
-        <p>
-         EP Tristes Histoires 
-                
-        </p>
+        <h2><span>EP Tristes Histoires</span></h2>
     </div>
     </div>
 </div>
@@ -79,10 +88,10 @@
         </div>
     </div>
 
-    <div id="Textintro">   
+    <!-- <div id="Textintro">   
         <div id="vide1"></div>
         <p id="description">
-            <!-- 🎶J'étais seule avant qu'ils s'en prenne a moi🎶 <br>
+            🎶J'étais seule avant qu'ils s'en prenne a moi🎶 <br>
                       
             Destin est le 4ème track de mon EP : Tristes histoires <br>
             
@@ -106,12 +115,12 @@
             
             Sur ce ...
 
-            Sayonara 🌸 -->
+            Sayonara 🌸
            <img class="shiro" src="../ASSETS/shiro.gif" height="500vh" width="650vw" alt="loli qui danse"> <br>
             Prochainement quand j'aurais pas la flemme de faire l'amv...
             </p>
             <div id="vide2"></div>
-    </div>
+    </div> -->
 
     <div id="vidéo">
         <div id="vide_vidéo1">
@@ -121,7 +130,7 @@
             
         </div>
         <div id="aperçu">
-            <iframe  src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/OKxoehZS-HE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <div id="vide_vidéo2">
             <img class="vide1" src="" alt="">
@@ -253,9 +262,8 @@ Mon coeur se Freeze
 Mon âme se vide
 </pre>
 
-    </div>
-    <script src="./assets/jquery.min.js" type="text/javascript" ></script>
-    <script src="./assets/bootstrap.js" type="text/javascript" ></script>
+</div>
+    <script src="../JS/anim.js"></script>
     <script type="text/javascript" src="../JS/menu.js"></script>
     <script type="text/javascript" src="../JS/script.js"></script>
 </body>

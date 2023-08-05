@@ -8,8 +8,10 @@
         <meta name="description" content="Retrouver mon site consacré à ma chaîne youtube où je post principalement des AMvs sur mes propres sons ">
         <meta name="keywords" content="Bakaa musique, AMVS, Son, hyperpop, sad, ep, tristes histoires,sokuu">
        
+        <link rel="stylesheet" href="../CSS/page animation.css">
         <link rel="stylesheet" href="../CSS/page GENERALE nouveau.css">
         <link rel="stylesheet" href="../CSS/style page jeu du loup.css">
+
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -20,14 +22,22 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"> 
-                
+           <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MK7YJFLP5M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MK7YJFLP5M');
+</script>        
         
     </head>
     
 <body>
     
     <nav class="navbar light-mode" role="navigation">
-        <div class="navbar__logo"><a href="index.html">Accueil</a></div> 
+        <div class="navbar__logo"><a href="../index.html">Accueil</a></div> 
    
         <ul class="navbar__links">
           <li class="navbar__link first"><a href="page AMV.html">AMV</a></li>
@@ -42,18 +52,15 @@
     <div id="imageson">
         <div id="table-row">
         <div id="minia">
-            
-        <img src="../ASSETS/CC_minia_Jeux_du_loup_v_6.png" alt="miniature du son du jeu du loup: premier son de l'ep Tristes Histoires">
-    
+<div class="card">
+        <img class="miniature" src="../ASSETS/CC_minia_Jeux_du_loup_v_6.png" alt="miniature du son du jeu du loup: premier son de l'ep Tristes Histoires">
+    </div>
     </div>
     <!-- faire flotter à droite de la minia -->
-    <div id="auteur">
-        <p> Bulle - Bakaa - Rinn </p>
+    <div class="auteur">
+        <h1><span> Bulle - Bakaa - Rinn </span></h1>
             <hr />
-        <p>
-         EP Tristes Histoires 
-                
-        </p>
+        <h2><span>EP Tristes Histoires</span><h2>
     </div>
     </div>
 </div>
@@ -212,6 +219,7 @@ Mais t'as su t'enfuir de cet enfer
 
     <script src="./assets/jquery.min.js" type="text/javascript" ></script>
     <script src="./assets/bootstrap.js" type="text/javascript" ></script>
+    <script type="text/javascript" src="../JS/anim.js"></script>
     <script type="text/javascript" src="../JS/menu.js"></script>
     <script type="text/javascript" src="../JS/script.js"></script>
 </body>

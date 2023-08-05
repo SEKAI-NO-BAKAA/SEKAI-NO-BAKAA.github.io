@@ -10,6 +10,7 @@
        
         <link rel="stylesheet" href="../CSS/page GENERALE nouveau.css">
         <link rel="stylesheet" href="../CSS/style page bulle.css">
+        <link rel="stylesheet" href="../CSS/page animation.css">
 
         
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
@@ -22,13 +23,21 @@
             referrerpolicy="no-referrer"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"> 
                 
-        
+           <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MK7YJFLP5M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MK7YJFLP5M');
+</script>
     </head>
     
 <body>
     
     <nav class="navbar light-mode" role="navigation">
-        <div class="navbar__logo"><a href="index.html">Accueil</a></div> 
+        <div class="navbar__logo"><a href="../index.html">Accueil</a></div> 
    
         <ul class="navbar__links">
           <li class="navbar__link first"><a href="page AMV.html">AMV</a></li>
@@ -43,18 +52,18 @@
     <div id="imageson">
         <div id="table-row">
         <div id="minia">
-            
-        <img src="../ASSETS/Minia_Bulle_v3.png" alt="miniature du son de bulle: premier son de l'ep Tristes Histoires">
-    
+            <div class="card">
+        <img class="miniature" src="../ASSETS/Minia_Bulle_v3.png" alt="miniature du son de bulle: premier son de l'ep Tristes Histoires">
+    </div>
     </div>
     <!-- faire flotter à droite de la minia -->
-    <div id="auteur">
-        <p> Bulle - Bakaa </p>
+    <div class="auteur">
+        <h1> <span>Bulle - Bakaa</span> </h1>
             <hr />
-        <p>
-         EP Tristes Histoires 
+        <h2>
+         <span>Tristes Histoires </span>
                 
-        </p>
+        </h2>
     </div>
     </div>
 </div>
@@ -110,21 +119,22 @@
 
     <div id="vidéo">
         <div id="vide_vidéo1">
-            <img class="vide1" src="../ASSETS/bulle d'eau.png" alt="bulle">
-            <img class="vide2" src="../ASSETS/bulle d'eau.png" alt="bulle">
-            <img class="vide3" src="../ASSETS/bulle d'eau.png" alt="bulle">
+            <img class="vide1" id="H2O" src="../ASSETS/bulle d'eau.png" alt="bulle">
+            <img class="vide2" id="H2O" src="../ASSETS/bulle d'eau.png" alt="bulle">
+            <img class="vide3" id="H2O" src="../ASSETS/bulle d'eau.png" alt="bulle">
 
         </div>
         <div id="aperçu"><iframe  src="https://www.youtube.com/embed/yx25vhAN7Rs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         <div id="vide_vidéo2">
-            <img class="vide1" src="../ASSETS/bulle d'eau.png" alt="bulle">
-            <img class="vide2" src="../ASSETS/bulle d'eau.png" alt="bulle">
+            <img class="vide1" id="H2O" src="../ASSETS/bulle d'eau.png" alt="bulle">
+            <img class="vide2" id="H2O" src="../ASSETS/bulle d'eau.png" alt="bulle">
         </div>
     </div>
 
-<div id="paroles"> 
+<div id="paroles" class="bulledeau" > 
 <pre id="introson" class="talkbubble">
-    <img src="../ASSETS/bulle d'eau.png" alt="bulle">
+<img class="eau" src="../ASSETS/bulle d'eau.png" alt="bulle">
+<div class="paroless">
 Cris raisonnent
 Mais que t'ai-je fait
 Elle est si mignonne
@@ -132,10 +142,12 @@ Quand elle s'énerve
 Ce rêve m'étonne
 Mais pince moi
 Vas-y plus fort
+</div> 
 </pre>
 <div id="blanc"></div>
 <pre id="refrain" class="talkbubble1">
-    <img src="../ASSETS/bulle d'eau.png" alt="bulle">
+<img class="eau" src="../ASSETS/bulle d'eau.png" alt="bulle">
+<div class="paroless"> 
 Refrain :
 Ce soir les bulles s'envolent 
 J'ai la tête à l'envers
@@ -150,11 +162,13 @@ Ce soir les bulles s'envolent
 J'ai la tête à l'envers
 Malgré la peur j'vais le faire 
 Alors résiste encore
+</div> 
 </pre>
 </div>
-<div id="paroles1"> 
+<div id="paroles1" class="bulledeau" > 
 <pre id="couplet1" class="talkbubble2" >
-<img src="../ASSETS/bulle d'eau.png" alt="bulle">
+<img class="eau" src="../ASSETS/bulle d'eau.png" alt="bulle">
+<div class="paroless">
 Couplet 1:
 
 J'ai visé son coeur
@@ -166,11 +180,12 @@ J'suis dans l'espace
 Rire Laisse place à la rancoeur 
 Elle pense  qu'elle n'a pas sa place
 L'idée de te perdre me fait peur
-
+</div>
 </pre>
 <div id="blanc"></div>
 <pre id="refrain2" class="talkbubble3">
-<img src="../ASSETS/bulle d'eau.png" alt="bulle">
+<img class="eau" src="../ASSETS/bulle d'eau.png" alt="bulle">
+<div class="paroless">
 Refrain :
 Ce soir les bulles s'envolent 
 J'ai la tête à l'envers
@@ -181,13 +196,14 @@ laisse moi faire
 Bulles dans son corps s'évaporent,
 la dévorent 
 J'suis du-perd 
+</div>
 </pre>
 
 </div>
-<div id="paroles2">
+<div id="paroles2" class="bulledeau" >
 <pre id="couplet2" class="talkbubble4">
-<img src="../ASSETS/bulle d'eau.png" alt="bulle">
-
+<img class="eau" src="../ASSETS/bulle d'eau.png" alt="bulle">
+<div class="paroless">
 Couplet 2:
 
 Mais je sais que c'était toi
@@ -210,21 +226,25 @@ Maintenant Uta se sent mieux
 Malgré mes larmes moi J'suis heureux
 Sourire m'rend joyeux
 Sa voix agit telle une berceuse
+</div>
 </pre>
 <div id="blanc"></div>
 <pre id="prerefrain" class="talkbubble5">
-<img src="../ASSETS/bulle d'eau.png" alt="bulle">
+<img class="eau" src="../ASSETS/bulle d'eau.png" alt="bulle">
+<div class="paroless">
 Pré refrain 2
 
 Elle arrête son histoire
 Fait penser à la p'tite sirène
 Partie remplie d'espoir
 Elle retourna à la mer
+</div>
 </pre>
 </div>
-<div id="paroles3">
+<div id="paroles3" class="bulledeau" >
 <pre id="refrain3" class="talkbubble6">
-<img src="../ASSETS/bulle d'eau.png" alt="bulle">
+<img class="eau" src="../ASSETS/bulle d'eau.png" alt="bulle">
+<div class="paroless">
 Refrain :
 Ce soir les bulles s'envolent 
 J'ai la tête à l'envers
@@ -235,11 +255,11 @@ laisse moi faire
 Bulles dans Son corps s'évaporent,
 la dévorent 
 J'suis du-perd
+</div>
 </pre>
 
     </div>
-    <script src="./assets/jquery.min.js" type="text/javascript" ></script>
-    <script src="./assets/bootstrap.js" type="text/javascript" ></script>
+    <script src="../JS/anim.js"></script>
     <script type="text/javascript" src="../JS/menu.js"></script>
     <script type="text/javascript" src="../JS/script.js"></script>
 </body>
