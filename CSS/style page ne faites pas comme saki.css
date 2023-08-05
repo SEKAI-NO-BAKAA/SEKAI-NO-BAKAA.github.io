@@ -2,7 +2,13 @@ body {
   background-color: rgb(26, 26, 26);
   color: rgb(200, 200, 200);
 }
-
+img{
+  user-select: none;
+}
+#minia{
+  filter: blur(25px);
+  overflow: hidden;
+}
 #refrain img {
   width: 400px;
   position: absolute;
@@ -54,6 +60,10 @@ body {
   left: 41%;
   top: -30%;
 }
+#saki{
+visibility: hidden;
+}
+
 
 @media screen and (max-width: 1050px) {
   #introson {
@@ -125,4 +135,10 @@ body {
     width: 80vw;
     height: 50vh;
   }
+}
+
+
+
+#saki.animate{
+animation: transitexte 8s forwards;
 }

@@ -1,9 +1,17 @@
+img,#aperçu{
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer */
+  user-select: none;
+}
+
 #introson img {
   width: 250px;
   position: absolute;
   z-index: -1;
   left: 37%;
   top: -13%;
+  
 }
 
 #refrain img {
@@ -43,11 +51,11 @@
   top: 16%;
 }
 #refrain3 img {
-  width: 340px;
+  width: 330px;
   position: absolute;
   z-index: -1;
   left: 41%;
-  top: -16%;
+  top: -20%;
 }
 #vidéo {
   padding-bottom: 50px;
@@ -66,5 +74,31 @@
   #refrain3 img,
   #couplet2 img {
     width: 0px;
+  }
+}
+.bulldeau,#H2O {
+  visibility: hidden;
+}
+.bulledeau.animate{
+  visibility: visible;
+  animation: bounce-in-top 2.5s both;
+  
+}
+.paroless{
+  visibility: hidden;
+}
+.bulledeau.animate .paroless{
+  animation: apparition 1s 2.5s forwards;
+}
+
+#H2O.animate{
+  visibility: visible;
+  animation: bounce-in-top 8.05s both ;
+ 
+}
+@media screen and (max-width: 1050px) {
+  
+  .bulledeau.animate .paroless{
+    animation: apparition 1s forwards;
   }
 }

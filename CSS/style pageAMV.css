@@ -164,7 +164,8 @@ a:hover:after{
 #searchbarre {
   width: 100%;
   text-align: center;
-  margin-bottom: 5vw;
+  margin-bottom: 6vh;
+  margin-top: 6vh;
 }
 
 .button {
@@ -217,10 +218,11 @@ button:hover {
 div.gallery {
     display: inline-block;
     margin: 0.5rem;
+    margin-bottom: 3rem;
     background-color: white;
     width: auto;
     padding-bottom: 1.6rem;
-    
+    overflow: hidden;
     
     
     
@@ -240,14 +242,28 @@ div.gallery {
   div.gallery img {
     width: 30vw;
     height: 25vw;
+    visibility: hidden;
   }
   
+ .pas-sorti{
+  filter: blur(20px);
+  overflow: hidden;
  
+ }
 
+.gallery.animate img{
+  animation: titleFadeIn 1s ease-out;
+  visibility: visible;
+}
 
-
-
-
+.desc h1{
+  visibility: hidden;
+}
+.desc.animate h1{
+  animation: titleFadeIn 1s  ease-out forwards;
+  animation-delay: .6s;
+  
+}
 
 
 

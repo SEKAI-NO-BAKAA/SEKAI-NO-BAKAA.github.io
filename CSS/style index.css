@@ -14,7 +14,7 @@
 @import url("htpps://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Dosis&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&display=swap');
 html {
   font-size: 10px;
 }
@@ -49,6 +49,8 @@ header {
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.9);
   z-index: 2;
   top: 0;
+  animation: transi-head .5s;
+  
 }
 #logo {
   font-family: "Dancing Script", cursive;
@@ -56,6 +58,8 @@ header {
   font-weight: bold;
 
   font-size: 3rem;
+  animation: transi-head 1s ;
+
 }
 
 header a {
@@ -63,6 +67,7 @@ header a {
   color: black;
   padding: 5px 20px;
   font-family: "Oleo Script Swash Caps", cursive;
+
 }
 
 header > a,
@@ -70,7 +75,7 @@ header button {
   background-color: transparent;
   color: black;
   margin: 0 20px 0 0;
-
+  animation: transi-head 1.5s ;
   font-size: 2.4rem;
 }
 
@@ -79,6 +84,8 @@ header button {
   box-shadow: none;
   border: none;
   outline: none;
+  
+
 }
 header .dropdown {
   position: relative;
@@ -110,7 +117,14 @@ header .dropdown:hover .content a {
   float: left;
   font-family: "Orbitron", sans-serif;
   font-size: 1.8rem;
+  animation: transi-head 2s ;
 }
+.dessins{
+  float: left;
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.8rem;
+    animation: transi-head 2.5s ;
+  }
 .bouton {
   background-color: transparent;
   border: none;
@@ -125,6 +139,31 @@ header .dropdown:hover .content a {
 .bouton:hover {
   background-color: transparent;
 }
+
+.first-part{
+  height: 100vh;
+
+  background: url(https://cdn.discordapp.com/attachments/659765201666572298/1022946616967180369/bakaabannv58.jpg)
+  no-repeat ;
+  background-size: cover;
+  
+  background-position-y: 15rem;
+  transition: ease;
+  animation: animatedBackground 1.5s linear ;
+}
+@keyframes animatedBackground {
+  from {
+background-position-y: 0rem;
+opacity: 0;
+  }
+  to {
+    background-position-y: 15rem;
+    opacity: 1;
+  }
+}
+
+
+
 #search {
   color: #373736;
   margin-top: 9rem;
@@ -138,7 +177,7 @@ header .dropdown:hover .content a {
 #searchbarre {
   width: 100%;
   text-align: center;
-  margin-bottom: 5vw;
+padding-top: 5vh;
 }
 
 .button {
@@ -178,38 +217,57 @@ button:hover {
   width: 50vw;
   position: absolute;
 
-  left: 22%;
+  left: 22.8%;
   font-size: 2rem;
   list-style-type: none;
   border: 1px solid #d5d4d4;
   background: #fff;
   cursor: pointer;
-  top: 175px;
+  top: 220px;
 }
 
 /* ******************image principale********** */
 
-#imagePrincipale {
-  padding-top: 100px;
 
-  background: url(https://cdn.discordapp.com/attachments/659765201666572298/1022946616967180369/bakaabannv58.jpg)
-    no-repeat 50% 50%;
-  background-size: cover;
-  /* pour que le fond couvre tout l'écran peut importe la taille de ce dernier et qu'il ne bouge pas (effet de style)  */
-  height: 460px;
-
-  image-orientation: revert;
-  /* filter: brightness(150%) */
-}
 #imagePrincipale h1 {
   font-family: "Orbitron", sans-serif;
   text-align: center;
   color: #2f2f2f;
   /* color: #6700ff; */
   font-size: 55px;
-  margin-top: -80px;
+ 
   text-shadow: 4px 4px 6px rgb(0, 0, 0);
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
+
+ 
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+#imagePrincipale span{
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+#imagePrincipale span:nth-child(1) {
+  animation: fade-in 1s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#imagePrincipale span:nth-child(2) {
+  animation: fade-in 1s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#imagePrincipale span:nth-child(3) {
+  animation: fade-in 1s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+
+
+
 
 #premierTrait {
   height: 2px;
@@ -219,13 +277,7 @@ button:hover {
   background-color: #939393;
   box-shadow: 4px 4px 6px rgb(0, 0, 0);
 }
-h3 {
-  font-family: "Noto Serif JP", serif;
-  text-align: center;
-  color: #000000;
-  font-size: 3em;
-  text-shadow: 4px 4px 6px rgb(0, 0, 0);
-}
+
 
 .buttonn {
   font-family: "Orbitron", sans-serif;
@@ -236,10 +288,13 @@ h3 {
   cursor: pointer;
   transition: all 0.3s ease-out;
   position: absolute;
-
+filter: blur(4px);
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 50px 0 0 0;
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  animation: fade-in 1s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+
 }
 
 .overlay {
@@ -252,20 +307,31 @@ h3 {
   transition: opacity 0.4s;
   visibility: hidden;
   opacity: 0;
+  
 }
 .overlay:target {
   visibility: visible;
   opacity: 1;
+  z-index: 1 ;
+  
 }
+
 .popup {
   margin: 12.5rem auto;
   padding: 2rem;
   background: white;
   border-radius: 5px;
-  width: 40%;
+  width: 30%;
+  max-height: 50vh;
   position: relative;
   transition: all 0.4s ease-in-out;
   font-size: 1.8rem;
+  min-height: 25vh;
+  overflow-y: scroll;
+  text-align: justify;
+  
+  
+  
 }
 .popup .cross {
   position: absolute;
@@ -289,16 +355,15 @@ h3 {
   /* background: linear-gradient(0deg, rgba(67,9,121,1) 0%, rgba(65,9,118,1) 50%, rgba(77,71,105,1) 100%); */
   /* background: linear-gradient(0deg, rgba(42,44,101,1) 0%, rgba(68,70,135,1) 51%, rgba(80,83,154,1) 90%); */
   /* background: linear-gradient(0deg, rgba(49,58,113,1) 0%, rgba(82,93,157,1) 20%, rgba(176,187,254,1) 85%); */
-  background: linear-gradient(
-    0deg,
-    rgb(49, 58, 113) 0%,
-    rgb(98, 129, 185) 26%,
-    rgb(176, 204, 236) 72%,
-    rgb(176, 187, 253) 100%
-  );
+  background: linear-gradient( 0deg, rgb(49, 58, 113) 0%, rgb(98, 129, 185) 26%, rgb(176, 204, 236) 72%, rgb(172 185 255) 100% );
+
+
+
+  /* changer le backcolor avec la photo en back */
   padding: 10px 0px 100px 0;
   /* espace entre le titre et le dessus  */
   font-family: "Raleway", sans-serif;
+  position: relative;
 }
 
 #textIntro {
@@ -307,7 +372,60 @@ h3 {
   font-size: 2rem;
   width: 100%;
   text-align: center;
+  
+
 }
+#cellule_textIntro h2{
+  text-transform:none;
+  letter-spacing: -3px;
+}
+#cellule_textIntro span{
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+#cellule_textIntro.animate span:nth-child(1) {
+  animation: fade-in 1s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#cellule_textIntro.animate span:nth-child(2) {
+  animation: fade-in 1s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+#cellule_textIntro.animate span:nth-child(3) {
+  animation: fade-in 1s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+#cellule_textIntro.animate span:nth-child(4) {
+  opacity: 0;
+}
+#cellule_textIntro.animate span:nth-child(5) {
+  animation: fade-in 1s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+#cellule_textIntro.animate span:nth-child(6) {
+  animation: fade-in 1s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+#cellule_textIntro.animate span:nth-child(7) {
+  animation: fade-in 1s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+#cellule_textIntro.animate span:nth-child(8) {
+  animation: fade-in 1s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.info{
+  font-size: 2.1rem;
+ font-weight: bold;
+}
+.description{
+  opacity: 0;
+}
+.description.animate{
+  
+  overflow: hidden; /* Pour empêcher le texte de déborder pendant l'animation */
+  /* animation: letterByLetter 2s steps(40, end) forwards; */
+  animation: scaleUp 1s ease-out forwards;
+}
+
 #videIntro,
 #videIntro2 {
   display: table-cell;
@@ -318,38 +436,39 @@ h3 {
 }
 
 #textIntro h2 {
-  font-size: 55px;
+  font-size: 35px;
   /* font-family: 'Press Start 2P', cursive; */
   font-family: "Montserrat", sans-serif;
+
+
 }
 
-#citation {
-  font-family: "Dancing Script", cursive;
 
-  text-align: center;
-  /* color:crimson; */
-  color: #3c000c;
-  font-size: 2em;
-  padding: 5px 20%;
-}
-
-#image {
+.image {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
+align-items: center;
 
-.imageAMV h4 {
+  
+} 
+
+.title {
   /* font-family: 'Genos', sans-serif; */
   font-family: "Indie Flower", cursive;
   text-align: center;
   font-size: 4rem;
   margin: 15px;
-
+  visibility: hidden;
+  
   /* si on ne met qu'une valeur dans margin cela signifie que ca s'applique en haut en bas et a gauche/droite */
 }
+.title.animate{
+  animation: transitexte 4s ;
+  visibility: visible;
+}
 
-.imageAMV img {
+.vid {
   box-shadow: 0px 10px 13px -77px #000, 19px 18px 27px -7px rgba(0, 0, 0, 0.37);
   width: 40vw;
   height: 30vw;
@@ -358,7 +477,16 @@ h3 {
 
   border-radius: 15px;
   /* angle en haut/bas/gauche/droite */
-}
+  
+  /* clip-path: inset(0 100% 100% 0); */
+  visibility: hidden;
+  }
+
+  .vid.animate{
+    /* animation: transimage 2s forwards; */
+    animation: fadeInZoomIn 1s ease-out;
+    visibility: visible;
+  }
 
 .imageAMV img:hover {
   /* hover=survolage avec souris */
@@ -370,6 +498,7 @@ h3 {
   /* temps pendant lequel ca grossit */
   box-shadow: 0px 25px 23px -17px #000000,
     19px 18px 27px -7px rgba(0, 0, 0, 0.37);
+    
 }
 
 /* ep du bakaa */
@@ -393,11 +522,15 @@ h3 {
   text-align: center;
   font-size: 3.5rem;
   margin: 0px;
-  padding: 15px;
-
+  display: inline-block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+ padding-bottom: 5vh;
   /* si on ne met qu'une valeur dans margin cela signifie que ca s'applique en haut en bas et a gauche/droite */
 }
-.imageEP img {
+
+.monEp{
   width: 36vw;
   height: 36vw;
   box-shadow: 5px 10px 13px -7px #000000,
@@ -405,6 +538,12 @@ h3 {
   text-align: center;
   border-radius: 400px;
   /* angle en haut/bas/gauche/droite */
+  visibility: hidden;
+}
+.monEp.animate{
+  /* animation: fadeInZoomIn 1.65s ease-out ; */
+  animation: bounces 1s ease-out;
+  visibility: visible;
 }
 
 .imageEP img:hover {
@@ -415,6 +554,44 @@ h3 {
   opacity: 0.9;
 }
 /* fin ep du bakaa */
+#citation {
+position: relative;
+justify-content: center;
+display: flex;
+gap: 5px;
+}
+.citate{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 3rem;
+  color: #3c000c;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  margin: 0;
+}
+.cursor{
+  
+  width: 3px;
+  height: auto;
+  background: #3c000c;
+
+
+}
+.cursor.animate{
+  animation: curseur .8s ease infinite;
+}
+@keyframes curseur{
+  0%{
+      opacity: 0;
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+  }
+}
 
 #meconnaître {
   /* background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(55,6,101,1) 81%); */
@@ -456,7 +633,7 @@ footer form {
 
 footer input,
 textarea,
-button {
+footer button {
   border: none;
   width: 60%;
   padding: 15px 10px;
@@ -465,6 +642,23 @@ button {
   font-family: "Advent Pro", sans-serif;
   border-radius: 8px;
   background-color: white;
+  visibility: hidden;
+}
+#pseudo.animate{
+  animation: SwipeUp 1s forwards;
+  animation-delay: 0s;
+}
+#email.animate{
+  animation: SwipeLeft 1s forwards;
+  animation-delay: .2s;
+}
+#msg.animate{
+  animation: SwipeRight 1s forwards;
+  animation-delay: .4s;
+}
+.valid.animate{
+  animation: SwipeDown 1s forwards;
+  animation-delay: .6s;
 }
 footer textarea {
   height: 140px;
@@ -497,6 +691,12 @@ footer button {
 #Icons {
   width: 50%;
   text-align: right;
+  animation: vanish .65s .5s ;
+
+}
+#Icons.animate {
+  animation: vanish .65s .5s ;
+
 }
 
 #Icons a {
@@ -521,32 +721,27 @@ footer button {
   .num {
     top: 40vh;
     left: 30vw;
+    
   }
 
   .lettre {
     font-size: 60px;
   }
-  #imagePrincipale {
+  /* #imagePrincipale {
     background-position: 0px -172px;
     background-size: center;
-  }
+  } */
   .imageAMV img {
     box-shadow: 0px 10px 13px -7px #000000,
-      19px 18px 27px -7px rgba(0, 0, 0, 0.37);
+    19px 18px 27px -7px rgba(0, 0, 0, 0.37);
     width: 47vw;
     height: 27vw;
 
-    border-radius: 00px;
     margin-right: 20px;
     margin-left: 20px;
   }
-  #citation {
-    font-family: "Dancing Script", cursive;
-    text-align: center;
-
-    font-size: 5rem;
-    padding: 5px 20%;
-  }
+  
+ 
   footer {
     color: #fffae1;
     padding: 20px 0px 20px 0px;
@@ -565,6 +760,18 @@ footer button {
 }
 
 @media screen and (max-width: 1050px) {
+  .first-part{
+    background-position-x: center;
+    background-position-y: 15rem;
+
+  }
+  #logo,
+  .dropdown,
+  #contact,
+  .dessins
+  {
+    font-size: 1.5rem;
+  }
   .progress {
     width: 60%;
     min-width: 300px;
@@ -581,12 +788,14 @@ footer button {
   .lettre {
     font-size: 30px;
   }
-  #imagePrincipale {
+  /* #imagePrincipale {
     background-position: 0px 110px;
     height: 300px;
     background-size: cover;
-  }
-
+  } */
+.image{
+  flex-direction: column;
+}
   .imageAMV img {
     box-shadow: 0px 10px 13px -7px #000000,
       19px 18px 27px -7px rgba(0, 0, 0, 0.37);
@@ -604,11 +813,9 @@ footer button {
     font-size: 1.5rem;
   }
   #citation {
-    font-family: "Dancing Script", cursive;
-    text-align: center;
+
 
     font-size: 4rem;
-    padding: 5px 20%;
   }
   footer {
     color: #fffae1;
@@ -622,6 +829,7 @@ footer button {
 }
 
 @media screen and (max-width: 750px) {
+  
   .popup {
     width: 60%;
     font-size: 1.4rem;
@@ -647,4 +855,11 @@ footer button {
     opacity: 0;
     transition: opacity 1.8s ease-in-out;
   }
+  .citate{
+    font-size: 2rem;
+  }
+  #textIntro{
+    font-size: 1.5rem;
+  }
 }
+
