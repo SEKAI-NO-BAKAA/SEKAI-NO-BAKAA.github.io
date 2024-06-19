@@ -14,6 +14,11 @@
 @import url('htpps://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/trajan-pro');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Judson&display=swap');
     *{
   box-sizing:border-box; 
   outline:none;
@@ -31,7 +36,10 @@ ul {
     --navbar-color: #222;
     --navbar-bg-color: #F0F0F0;  
 }
-
+.dark-mode {
+    --navbar-color: #FFF;
+    --navbar-bg-color: #471315;  
+}
 
 .navbar {  
   display:flex;
@@ -39,12 +47,11 @@ ul {
   justify-content:space-between;   
   padding:10px;
   font-size:1.1rem;
-  background: rgb(241 234 234);
-    color: #000;
+  background:#471315;
+  color:var(--navbar-color);
   height: var(--navbar-height);
-  min-height: 60px;
   box-shadow: 0 0 24px 0 rgba(0,0,0,.9);
-  
+ 
 }
 .navbar__logo{
   animation: transi-head 1s ;
@@ -75,9 +82,10 @@ ul {
 }
     .first-part-presentation{
         height: calc(100vh -  var(--navbar-height) );
-        background: rgb(255,255,255);
-        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(249,142,237,1) 100%);
-
+        background: rgb(3,25,41);
+        /* background: linear-gradient(180deg, #E25B66 0%, #DE4740 100%); */
+        background: linear-gradient(180deg, #5A1B1C 0%, #B53D34 100%);
+        
 }
 
     
@@ -121,6 +129,7 @@ ul {
     width: 100%;
     height: 100%;
 
+
 clip-path: inset(0 100% 0 0);
 animation: transimage 2s forwards;
 animation-timing-function: cubic-bezier(0.82, 0.2, 0.2, 0.5);
@@ -131,6 +140,7 @@ will-change: transform;
 }
 .card:hover .miniature{
 transform: scale(1.1);
+
 }
 
     .auteur{
@@ -165,8 +175,9 @@ transform: scale(1.1);
     .auteur hr{
         text-align: center;
         position: relative;
-        width: 51%;
+        width: calc(50%);
         font-size: 3rem;
+        margin: 0;
     }
     #collaborateurs {
         display: table;
@@ -210,37 +221,34 @@ transform: scale(1.1);
     #collaborateurs a{
         display: table-cell;
         text-decoration: none;
-        color: #FFAFAF;
+        color: #E15860;
         height: 50px;
         vertical-align: middle;
         text-align: center;
         font-size: 25px;
     }
     .title{
-opacity: 0;
-  font-weight: 800;
-  color: transparent;
-  font-size:120px;
-  background: url("../ASSETS/voie\ lactée\ violette.jpg") repeat;
-  background-position: 90% 30%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  position:relative;
-  line-height:90px;
-  
+        font-size: 4rem;
+        font-weight: bold;
       animation: titleFadeIn .5s ease-in-out forwards;
       animation-delay: 0s;
   
 }
+
 .second-part-presentation{
   height: 100vh;
-  background: rgb(249,142,237);
-background: linear-gradient(180deg, rgba(249,142,237,1) 0%, rgba(143,22,129,1) 100%);
+  background: rgb(22,104,143);
+background: linear-gradient(180deg, #B53D34 0%, #DE4740 100%);
+font-family: 'Trajan Pro', sans-serif;
+/* font-family: 'Cinzel', serif;
+font-family: 'Cormorant Garamond', serif;
+
+font-family: 'Judson', serif; */
 }   
 .lyrics{
-  background: rgb(143,22,129);
-background: linear-gradient(180deg, rgba(143,22,129,1) 0%, rgba(41,3,36,1) 100%);
+  background: rgb(67,142,179);
+  background: linear-gradient(180deg,#DE4740 0%, #E25B66  100%);
+  
 }
 
   
@@ -250,6 +258,7 @@ background: linear-gradient(180deg, rgba(143,22,129,1) 0%, rgba(41,3,36,1) 100%)
         width: 100%;
         padding-top: .1rem;
         /* obliger de rajouter ce padding pour que l'anim ne commence pas dès le chargement de la page */
+
     }
     #description{
         display: table-cell;
@@ -318,64 +327,71 @@ width: 100%;
 #introson{
 display: table-cell;
 height: 100px;
-font-size: 1rem;
+font-size: 1.2rem;
 text-align: right;
 vertical-align: top;
 width: 48%;
 z-index: 2;
+font-family: 'Playfair Display', serif;
     }
 
 
 #refrain{
 display: table-cell;
 height: 100px;
-font-size: 1rem;
+font-size: 1.2rem;
 text-align: left;
 vertical-align: bottom;
+font-family: 'Playfair Display', serif;
     }
 
 
 #couplet1 {
 display: table-cell;
 height: 100px;
-font-size: 1rem;
+font-size: 1.2rem;
 text-align: right;
 vertical-align: top;
 width: 48%;
+font-family: 'Playfair Display', serif;
     }
 
 #refrain2{
 display: table-cell;
 height: 100px;
-font-size: 1rem;
+font-size: 1.2rem;
 text-align: left;
 vertical-align: bottom;
+font-family: 'Playfair Display', serif;
     }
 
 #couplet2{
 display: table-cell;
 height: 100px;
-font-size: 1rem;
+font-size: 1.2rem;
 text-align: right;
 vertical-align: top;
 width: 48%;
+font-family: 'Playfair Display', serif;
     }
 
 #prerefrain{
 display: table-cell;
 height: 100px;
-font-size: 1rem;
+font-size: 1.2rem;
 text-align: left;
 vertical-align: middle;
+font-family: 'Playfair Display', serif;
     }
 
 
 #refrain3{
 display: table-cell;
 height: 100px;
-font-size: 1rem;
+font-size: 1.2rem;
 text-align: center;
 vertical-align: middle;
+font-family: 'Playfair Display', serif;
     }
 
 #blanc{
@@ -514,13 +530,14 @@ padding-bottom: 0px;
     content:"";
     width:0;
     height:1px;
-    background:black;
+    background:var(--navbar-color);
     transition:width .4s;
     
   }
   .navbar__link:hover > a::after {
     width:100%;
   }
+  
 }
 @media screen and (max-width: 750px) {
   .title{
@@ -537,7 +554,7 @@ padding-bottom: 0px;
       position:absolute;
       top: 7.8vh;
       right:0;     
-      background:black;     
+      background:var(--navbar-bg-color);     
       transform: translateX(110%);
       transition: all .5s ease-in-out;
       /* box-shadow: 0px 28px 30px 0 rgb(255, 255, 255); */
@@ -585,7 +602,7 @@ padding-bottom: 0px;
       width:45px;
       height:4px;  
       border-radius:3px;
-      background:black; 
+      background:var(--navbar-color); 
       transition: all .5s ease-in-out;   
     }
     .bar::before, .bar::after {
@@ -594,7 +611,7 @@ padding-bottom: 0px;
       height:4px;
       position:absolute; 
       left:0;  
-      background:black; 
+      background:var(--navbar-color); 
       border-radius:3px;    
       transition: all .5s ease-in-out;
     }
@@ -673,7 +690,7 @@ padding-bottom: 0px;
           vertical-align: middle;
       }
       .auteur hr{
-          width: 80%;
+          width: 75%;
           
       }
       

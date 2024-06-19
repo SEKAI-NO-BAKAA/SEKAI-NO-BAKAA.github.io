@@ -28,7 +28,7 @@ ul {
     --font-size:1rem;
     }
 .light-mode {
-    --navbar-color: #222;
+    --navbar-color: #ffffff;
     --navbar-bg-color: #F0F0F0;  
 }
 
@@ -39,8 +39,8 @@ ul {
   justify-content:space-between;   
   padding:10px;
   font-size:1.1rem;
-  background: rgb(241 234 234);
-    color: #000;
+  background: #1b1f27;
+    color: #fff;
   height: var(--navbar-height);
   min-height: 60px;
   box-shadow: 0 0 24px 0 rgba(0,0,0,.9);
@@ -75,8 +75,8 @@ ul {
 }
     .first-part-presentation{
         height: calc(100vh -  var(--navbar-height) );
-        background: rgb(255,255,255);
-        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(249,142,237,1) 100%);
+        
+        background: linear-gradient(180deg, #13151a 0%, #3c4b6e 100%);
 
 }
 
@@ -120,6 +120,7 @@ ul {
 .miniature{
     width: 100%;
     height: 100%;
+    max-height: 440px;
 
 clip-path: inset(0 100% 0 0);
 animation: transimage 2s forwards;
@@ -165,9 +166,19 @@ transform: scale(1.1);
     .auteur hr{
         text-align: center;
         position: relative;
-        width: 51%;
+        width: 90%;
         font-size: 3rem;
     }
+
+/* .lune {
+    position: relative;
+    width: 170px;
+    height: 170px;
+    opacity: 0.2;
+    top: 14%;
+    right: 125%;
+} */
+
     #collaborateurs {
         display: table;
         width: 100%;
@@ -210,7 +221,7 @@ transform: scale(1.1);
     #collaborateurs a{
         display: table-cell;
         text-decoration: none;
-        color: #FFAFAF;
+        color: #afb8ff;
         height: 50px;
         vertical-align: middle;
         text-align: center;
@@ -219,13 +230,14 @@ transform: scale(1.1);
     .title{
 opacity: 0;
   font-weight: 800;
-  color: transparent;
-  font-size:120px;
-  background: url("../ASSETS/voie\ lactée\ violette.jpg") repeat;
-  background-position: 90% 30%;
+  
+  font-size:60px;
+  /* background: url("../ASSETS/voie\ lactée\ bleue.jpg")  repeat;
+  background-size: 110%;
+  background-position: 20% 30%;
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  color: transparent; */
   position:relative;
   line-height:90px;
   
@@ -236,11 +248,12 @@ opacity: 0;
 .second-part-presentation{
   height: 100vh;
   background: rgb(249,142,237);
-background: linear-gradient(180deg, rgba(249,142,237,1) 0%, rgba(143,22,129,1) 100%);
+background: linear-gradient(180deg, #3c4b6e 0%, #214191 100%);
 }   
 .lyrics{
   background: rgb(143,22,129);
-background: linear-gradient(180deg, rgba(143,22,129,1) 0%, rgba(41,3,36,1) 100%);
+  background: linear-gradient(180deg, #214191 0%, #89aaff 100%);
+  padding-top: 50px;
 }
 
   
@@ -382,14 +395,40 @@ vertical-align: middle;
 display: table-cell;
 width: 4%;
     }
+    @media screen and (max-width: 1500px) {
+        .lune{
+            display: none;
+        }
+        #introson,#refrain,#couplet1,#refrain2,#couplet2,#prerefrain{
+            font-size: 1vw;
+        }
+    }
+    @media screen and (max-width: 1250px) {
+        .title{
+            font-size: 60px;
+        }
+        
+        #aperçu iframe{
+    
+            width: 50vw; 
+            height: 35vw;
+            min-width: 0px;
+            min-height: 0px;
+        }
+    }
+
     @media screen and (max-width: 1050px) {
 
 #minia img{
-    min-width: 420px;
+    max-width: 350px;
     max-height: 292px;
 }
-
-
+.lune {
+   display: none;
+}
+.lyrics{
+    padding-top: 80px;
+}
 
 #collaborateurs button {
     min-width: 180px;
@@ -405,9 +444,10 @@ width: 4%;
 }
 #aperçu iframe{
     
-    width: 40vw; 
-    height: 48vw;
-    
+    width: 50vw; 
+    height: 35vw;
+    min-width: 0px;
+    min-height: 0px;
 }
 #vide_vidéo1 .vide1,
 #vide_vidéo1 .vide2,
@@ -429,7 +469,7 @@ width: 4%;
   text-align: center;
   width: 100%;
   height: auto;
-font-size: 3vw;
+font-size: 2.3vw;
 }
 #refrain{
 display: block;
@@ -437,7 +477,7 @@ text-align: center;
 height: auto;
 
 width: 100%;
-font-size: 3vw;
+font-size: 2.3vw;
 }
 
 #vidéo{
@@ -456,7 +496,7 @@ text-align: center;
 height: auto;
 
 width: 100%;
-font-size: 3vw;
+font-size: 2.3vw;
 }
 
 #refrain2{
@@ -465,7 +505,7 @@ text-align: center;
 height: auto;
 
 width: 100%;
-font-size: 3vw;
+font-size: 2.3vw;
 }
 
 
@@ -475,7 +515,7 @@ text-align: center;
 height: auto;
 
 width: 100%;
-font-size: 3vw;
+font-size: 2.3vw;
 }
 
 #prerefrain{
@@ -484,7 +524,7 @@ text-align: center;
 height: auto;
 
 width: 100%;
-font-size: 3vw;
+font-size: 2.3vw;
 }
 
 
@@ -494,7 +534,7 @@ text-align: center;
 height: auto;
 
 width: 100%;
-font-size: 3vw;
+font-size: 2.3vw;
 }
 
 
@@ -506,6 +546,9 @@ width: 100%;
 #paroles,#paroles2,#paroles1,#paroles3{
 padding-bottom: 0px;
 }
+.second-part-presentation{
+    height: 85vh;
+}
 
 }   
 @media screen and (min-width:768px) {
@@ -514,7 +557,7 @@ padding-bottom: 0px;
     content:"";
     width:0;
     height:1px;
-    background:black;
+    background:rgb(255, 255, 255);
     transition:width .4s;
     
   }
@@ -537,7 +580,7 @@ padding-bottom: 0px;
       position:absolute;
       top: 7.8vh;
       right:0;     
-      background:black;     
+      background:#1b1f27;     
       transform: translateX(110%);
       transition: all .5s ease-in-out;
       /* box-shadow: 0px 28px 30px 0 rgb(255, 255, 255); */
@@ -585,7 +628,7 @@ padding-bottom: 0px;
       width:45px;
       height:4px;  
       border-radius:3px;
-      background:black; 
+      background:rgb(255, 255, 255); 
       transition: all .5s ease-in-out;   
     }
     .bar::before, .bar::after {
@@ -594,7 +637,7 @@ padding-bottom: 0px;
       height:4px;
       position:absolute; 
       left:0;  
-      background:black; 
+      background:rgb(255, 255, 255); 
       border-radius:3px;    
       transition: all .5s ease-in-out;
     }

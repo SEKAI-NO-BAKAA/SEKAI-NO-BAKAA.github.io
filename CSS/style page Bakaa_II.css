@@ -14,6 +14,13 @@
 @import url('htpps://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Dosis&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/trajan-pro');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cormorant+Garamond:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Judson&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Judson&family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&display=swap');
     *{
   box-sizing:border-box; 
   outline:none;
@@ -31,7 +38,10 @@ ul {
     --navbar-color: #222;
     --navbar-bg-color: #F0F0F0;  
 }
-
+.dark-mode {
+    --navbar-color: #FFF;
+    --navbar-bg-color: #b59716;;  
+}
 
 .navbar {  
   display:flex;
@@ -39,12 +49,11 @@ ul {
   justify-content:space-between;   
   padding:10px;
   font-size:1.1rem;
-  background: rgb(241 234 234);
-    color: #000;
+  background:#b59716;
+  color:var(--navbar-color);
   height: var(--navbar-height);
-  min-height: 60px;
   box-shadow: 0 0 24px 0 rgba(0,0,0,.9);
-  
+ 
 }
 .navbar__logo{
   animation: transi-head 1s ;
@@ -75,9 +84,10 @@ ul {
 }
     .first-part-presentation{
         height: calc(100vh -  var(--navbar-height) );
-        background: rgb(255,255,255);
-        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(249,142,237,1) 100%);
-
+        background: rgb(3,25,41);
+        /* background: linear-gradient(180deg, #E25B66 0%, #DE4740 100%); */
+        background: linear-gradient(180deg, #caae10 0%, #755e11 100%);
+        
 }
 
     
@@ -121,6 +131,7 @@ ul {
     width: 100%;
     height: 100%;
 
+
 clip-path: inset(0 100% 0 0);
 animation: transimage 2s forwards;
 animation-timing-function: cubic-bezier(0.82, 0.2, 0.2, 0.5);
@@ -131,6 +142,7 @@ will-change: transform;
 }
 .card:hover .miniature{
 transform: scale(1.1);
+
 }
 
     .auteur{
@@ -165,8 +177,10 @@ transform: scale(1.1);
     .auteur hr{
         text-align: center;
         position: relative;
-        width: 51%;
+        width: calc(35%);
         font-size: 3rem;
+        margin: 0;
+        border-color: #fdd562;
     }
     #collaborateurs {
         display: table;
@@ -210,37 +224,44 @@ transform: scale(1.1);
     #collaborateurs a{
         display: table-cell;
         text-decoration: none;
-        color: #FFAFAF;
+        color: #FE0000;
         height: 50px;
         vertical-align: middle;
         text-align: center;
         font-size: 25px;
     }
     .title{
-opacity: 0;
-  font-weight: 800;
-  color: transparent;
-  font-size:120px;
-  background: url("../ASSETS/voie\ lactée\ violette.jpg") repeat;
-  background-position: 90% 30%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  position:relative;
-  line-height:90px;
-  
+        font-size: 4rem;
+        font-weight: bold;
       animation: titleFadeIn .5s ease-in-out forwards;
       animation-delay: 0s;
   
 }
+
 .second-part-presentation{
-  height: 100vh;
-  background: rgb(249,142,237);
-background: linear-gradient(180deg, rgba(249,142,237,1) 0%, rgba(143,22,129,1) 100%);
-}   
+  height: 110vh;
+  
+background: linear-gradient(180deg, #755e11 0%, #72350c 100%);
+
+
+/* Crée une diagonale ascendante */
+
+/* font-family: 'Cinzel', serif;
+font-family: 'Cormorant Garamond', serif;
+
+font-family: 'Judson', serif; */
+}  
+.second-part-presentation_child{
+    width: 100%;
+    height: 100%;
+    padding: 80px 10px 120px;
+    background-color: #222;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100% ); 
+    color: #F9F901;
+} 
 .lyrics{
-  background: rgb(143,22,129);
-background: linear-gradient(180deg, rgba(143,22,129,1) 0%, rgba(41,3,36,1) 100%);
+  background: linear-gradient(180deg,#72350c  0%,  #5A1B1C 100%);
+  
 }
 
   
@@ -250,14 +271,16 @@ background: linear-gradient(180deg, rgba(143,22,129,1) 0%, rgba(41,3,36,1) 100%)
         width: 100%;
         padding-top: .1rem;
         /* obliger de rajouter ce padding pour que l'anim ne commence pas dès le chargement de la page */
+
     }
     #description{
         display: table-cell;
         text-align: justify;
-        font-size: 1rem;
+        font-size: 1.2rem;
         letter-spacing: .5px;
 line-height: 25px;
 visibility: hidden;
+font-family: 'Lobster Two', sans-serif;
 
     }
     #description a {
@@ -289,6 +312,14 @@ visibility: hidden;
     display: table-cell;
     width: 25%;
 }
+#vide_vidéo1 img{
+    width: 100%;
+    height: 28rem;
+    opacity: 0.2;
+    padding-top: 4rem;
+    transform: rotate(-45deg);
+    border-radius: 100%;
+}
 #aperçu{
     position: relative;
     display: table-cell;
@@ -305,7 +336,29 @@ visibility: hidden;
         min-height: 450px;
     }
 
-
+.lyrics h2{
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    font-family: 'Lobster Two', sans-serif;
+}
+    
+      
+      @keyframes smoke-animation {
+        0% {
+          transform: scale(0.8);
+          opacity: 0.7;
+        }
+        50% {
+          transform: scale(1.2);
+          opacity: 0.3;
+        }
+        100% {
+          transform: scale(0.8);
+          opacity: 0.7;
+        }
+      }
 #paroles,#paroles2,#paroles1,#paroles3{
 display: table;
 position: relative;
@@ -318,64 +371,78 @@ width: 100%;
 #introson{
 display: table-cell;
 height: 100px;
-font-size: 1rem;
+font-size: 1.2rem;
+font-weight: 400;
 text-align: right;
 vertical-align: top;
 width: 48%;
 z-index: 2;
+font-family: 'Lobster Two', serif;
     }
 
 
 #refrain{
 display: table-cell;
 height: 100px;
-font-size: 1rem;
+font-size: 1.2rem;
+font-weight: 400;
 text-align: left;
 vertical-align: bottom;
+font-family: 'Lobster Two', serif;
     }
 
 
 #couplet1 {
 display: table-cell;
 height: 100px;
-font-size: 1rem;
+font-size: 1.2rem;
+font-weight: 400;
 text-align: right;
 vertical-align: top;
 width: 48%;
+font-family: 'Lobster Two', serif;
     }
 
 #refrain2{
 display: table-cell;
 height: 100px;
-font-size: 1rem;
+font-size: 1.2rem;
+font-weight: 400;
 text-align: left;
 vertical-align: bottom;
+font-family: 'Lobster Two', serif;
     }
 
 #couplet2{
 display: table-cell;
 height: 100px;
-font-size: 1rem;
+font-size: 1.2rem;
+font-weight: 400;
 text-align: right;
 vertical-align: top;
 width: 48%;
+font-family: 'Lobster Two', serif;
     }
 
 #prerefrain{
 display: table-cell;
 height: 100px;
-font-size: 1rem;
+font-size: 1.2rem;
+font-weight: 400;
 text-align: left;
 vertical-align: middle;
+font-family: 'Lobster Two', serif;
     }
 
 
 #refrain3{
 display: table-cell;
 height: 100px;
-font-size: 1rem;
+font-size: 1.2rem;
+font-weight: 400;
 text-align: center;
 vertical-align: middle;
+font-family: 'Lobster Two', serif;
     }
 
 #blanc{
@@ -514,13 +581,14 @@ padding-bottom: 0px;
     content:"";
     width:0;
     height:1px;
-    background:black;
+    background:var(--navbar-color);
     transition:width .4s;
     
   }
   .navbar__link:hover > a::after {
     width:100%;
   }
+  
 }
 @media screen and (max-width: 750px) {
   .title{
@@ -537,7 +605,7 @@ padding-bottom: 0px;
       position:absolute;
       top: 7.8vh;
       right:0;     
-      background:black;     
+      background:var(--navbar-bg-color);     
       transform: translateX(110%);
       transition: all .5s ease-in-out;
       /* box-shadow: 0px 28px 30px 0 rgb(255, 255, 255); */
@@ -585,7 +653,7 @@ padding-bottom: 0px;
       width:45px;
       height:4px;  
       border-radius:3px;
-      background:black; 
+      background:var(--navbar-color); 
       transition: all .5s ease-in-out;   
     }
     .bar::before, .bar::after {
@@ -594,7 +662,7 @@ padding-bottom: 0px;
       height:4px;
       position:absolute; 
       left:0;  
-      background:black; 
+      background:var(--navbar-color); 
       border-radius:3px;    
       transition: all .5s ease-in-out;
     }
@@ -673,7 +741,7 @@ padding-bottom: 0px;
           vertical-align: middle;
       }
       .auteur hr{
-          width: 80%;
+          width: 75%;
           
       }
       

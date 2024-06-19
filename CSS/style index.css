@@ -142,14 +142,14 @@ header .dropdown:hover .content a {
 
 .first-part{
   height: 100vh;
-
-  background: url(https://cdn.discordapp.com/attachments/659765201666572298/1022946616967180369/bakaabannv58.jpg)
-  no-repeat ;
+  background: url(../ASSETS/bakaa_principale.jpg) no-repeat;
   background-size: cover;
-  
-  background-position-y: 15rem;
+  background-position-y: -12rem;
   transition: ease;
-  animation: animatedBackground 1.5s linear ;
+  animation: animatedBackground 1.7s linear;
+  position: relative;
+  top: 15vh;
+
 }
 @keyframes animatedBackground {
   from {
@@ -157,14 +157,14 @@ background-position-y: 0rem;
 opacity: 0;
   }
   to {
-    background-position-y: 15rem;
+    background-position-y: -12rem;
     opacity: 1;
   }
 }
 
 
 
-#search {
+/* #search {
   color: #373736;
   margin-top: 9rem;
   font-size: 2rem;
@@ -178,7 +178,7 @@ opacity: 0;
   width: 100%;
   text-align: center;
 padding-top: 5vh;
-}
+} */
 
 .button {
   font-size: 2.1rem;
@@ -207,7 +207,7 @@ button:hover {
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
-
+/* 
 #auto-suggest .search:focus {
   color: #555;
   border-color: #c8c8c8;
@@ -224,7 +224,7 @@ button:hover {
   background: #fff;
   cursor: pointer;
   top: 220px;
-}
+} */
 
 /* ******************image principale********** */
 
@@ -235,7 +235,7 @@ button:hover {
   color: #2f2f2f;
   /* color: #6700ff; */
   font-size: 55px;
- 
+  margin-top: 100px;
   text-shadow: 4px 4px 6px rgb(0, 0, 0);
   transform: scale(0.94);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
