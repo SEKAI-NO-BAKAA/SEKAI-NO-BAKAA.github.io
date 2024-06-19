@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bientôt</title>
+</head>
+<body>
+    <div id="countdown"></div>
+
+    <script>let countDownDate = new Date("Aug 01, 2023 00:00:00").getTime();
+     
+     let x =setInterval(function(){
+        let now = new Date().getTime();
+        let distance = countDownDate - now;
+        let days = Math.floor(distance / (1000*60*60*24));
+        let hours = Math.floor(distance % (1000*60*60*24) / (1000*60*60));
+        let minutes = Math.floor(distance % (1000*60*60) / (1000*60));
+        let seconds = Math.floor((distance % (1000*60) / 1000));
+
+        document.querySelector("#countdown").innerHTML = `
+        <div class='tag'>
+            <span class='value'>${days} </span>
+            <span class='label'>Jours</span>
+        </div>
+        <div class='tag'>
+            <span class='value'>${hours} </span>
+            <span class='label'>Heures</span>
+        </div>
+        <div class='tag'>
+            <span class='value'>${minutes} </span>
+            <span class='label'>Minutes</span>
+        </div>
+        <div class='tag'>
+            <span class='value'>${seconds} </span>
+            <span class='label'>Secondes</span>
+        </div>
+        `;
+
+        if (distance <0){
+            clearInterval(x);
+            document.querySelector("countdown").innerHTML = "<span>Terminé</span>";
+        }
+    },1000);
+
+
+    </script>
+</body>
+</html>
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url(https://cdn.discordapp.com/attachments/659765201666572298/1022946616967180369/bakaabannv58.jpg);
+    background-position: 50% 100% ;
+    background-size: cover;
+    overflow-y: hidden;
+}
+#countdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tag{
+    width: 100px;
+    padding: 30px;
+    border-radius: 10px;
+    background: #000;
+    color: #FFF;
+    text-align: center;
+}
+.value{
+    display: block;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.label{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+@media screen and (max-width: 750px) {
+.tag{
+    width: 30px;
+
+}   
+.value{
+    font-weight: 500;
+    font-size: 10px;
+} 
+.label{
+    font-size: 10px;
+}
+}
+</style>
