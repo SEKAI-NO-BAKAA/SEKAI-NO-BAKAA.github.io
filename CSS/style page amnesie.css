@@ -76,7 +76,7 @@ ul {
   display:none;
 }
     .first-part-presentation{
-        height: calc(100vh -  var(--navbar-height) );
+        
         background: rgb(3,25,41);
 background: linear-gradient(180deg, #80b3f0 0%, #769dcc 100%);
 
@@ -172,15 +172,16 @@ transform: scale(1.1);
         font-size: 3rem;
     }
     #collaborateurs {
-        display: table;
-        width: 100%;
-        position: relative;
-        top: 7vh;
-        /* background-color: bisque; */
-        height: 100px;
-        margin-bottom: 6rem;
-        visibility: hidden;
-    }
+      display: table;
+      width: 100%;
+      position: relative;
+      top: 70px;
+      /* background-color: bisque; */
+      height: 100px;
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+      visibility: hidden;
+  }
     #collaborateurs .collab1,
     #collaborateurs .collab2,
     #collaborateurs .collab3,
@@ -211,30 +212,30 @@ transform: scale(1.1);
     opacity: 0.8;
     }
     #collaborateurs a{
-        display: table-cell;
-        text-decoration: none;
-        color: #6796ec;
-        height: 50px;
-        vertical-align: middle;
-        text-align: center;
-        font-size: 25px;
-    }
-    .title{
-        font-size: 4rem;
-        font-weight: bold;
-      animation: titleFadeIn .5s ease-in-out forwards;
-      animation-delay: 0s;
-  
+      display: table-cell;
+      text-decoration: none;
+      color: #6796ec;
+      height: 50px;
+      vertical-align: middle;
+      text-align: center;
+      font-size: 25px;
+  }
+  .title{
+      font-size: 4rem;
+      font-weight: bold;
+    animation: titleFadeIn .5s ease-in-out forwards;
+    animation-delay: 0s;
+
 }
 .second-part-presentation{
-  height: 100vh;
+  padding-top: 11vh;
   background: rgb(22,104,143);
 background: linear-gradient(180deg, #769dcc 0%, #8fa5c0 100%);
 }   
 .lyrics{
   background: rgb(67,142,179);
   background: linear-gradient(180deg,#8fa5c0 0%, #96A0AC  100%);
-
+  padding-top: 10vh;
 }
 
   
@@ -629,11 +630,9 @@ padding-bottom: 0px;
       transition: all 1.4s ease-out;
     } */
     .title, .auteur h2{
-      font-size: 2em;
+      font-size: 3em;
     }
-    #collaborateurs {
-      margin-top: 2rem;
-    }
+   
     #collaborateurs button {
     min-width: 90px;
 }

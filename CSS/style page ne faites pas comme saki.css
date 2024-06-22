@@ -6,9 +6,10 @@ img{
   user-select: none;
 }
 #minia{
-  filter: blur(25px);
+  
   overflow: hidden;
 }
+
 #refrain img {
   width: 400px;
   position: absolute;
@@ -136,7 +137,12 @@ visibility: hidden;
     height: 50vh;
   }
 }
-
+.auteur{
+  margin-top: 3rem;
+}
+#collaborateurs {
+  margin-top: 7rem;
+}
 
 
 #saki.animate{

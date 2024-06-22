@@ -117,9 +117,9 @@ visibility: hidden;
         /* height:calc(100vh - 65px);   */
         height: auto;
         position:absolute;
-        top: 7.8vh;
+        top: 6.8vh;
         right:0;     
-        background:black;     
+        background:white;     
         transform: translateX(110%);
         transition: all .5s ease-in-out;
         /* box-shadow: 0px 28px 30px 0 rgb(255, 255, 255); */

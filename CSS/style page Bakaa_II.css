@@ -83,7 +83,7 @@ ul {
   display:none;
 }
     .first-part-presentation{
-        height: calc(100vh -  var(--navbar-height) );
+        
         background: rgb(3,25,41);
         /* background: linear-gradient(180deg, #E25B66 0%, #DE4740 100%); */
         background: linear-gradient(180deg, #caae10 0%, #755e11 100%);
@@ -183,15 +183,16 @@ transform: scale(1.1);
         border-color: #fdd562;
     }
     #collaborateurs {
-        display: table;
-        width: 100%;
-        position: relative;
-        top: 7vh;
-        /* background-color: bisque; */
-        height: 100px;
-        margin-bottom: 6rem;
-        visibility: hidden;
-    }
+      display: table;
+      width: 100%;
+      position: relative;
+      top: 70px;
+      /* background-color: bisque; */
+      height: 100px;
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+      visibility: hidden;
+  }
     #collaborateurs .collab1,
     #collaborateurs .collab2,
     #collaborateurs .collab3,
@@ -239,8 +240,8 @@ transform: scale(1.1);
 }
 
 .second-part-presentation{
-  height: 110vh;
   
+  padding-top: 11vh;
 background: linear-gradient(180deg, #755e11 0%, #72350c 100%);
 
 
@@ -261,7 +262,7 @@ font-family: 'Judson', serif; */
 } 
 .lyrics{
   background: linear-gradient(180deg,#72350c  0%,  #5A1B1C 100%);
-  
+  padding-top: 10vh;
 }
 
   
@@ -703,11 +704,9 @@ padding-bottom: 0px;
       transition: all 1.4s ease-out;
     } */
     .title, .auteur h2{
-      font-size: 2em;
+      font-size: 3em;
     }
-    #collaborateurs {
-      margin-top: 2rem;
-    }
+    
     #collaborateurs button {
     min-width: 90px;
 }
@@ -754,7 +753,7 @@ padding-bottom: 0px;
           width: 11%;
       }
       #vide_vidéo1,#vide_vidéo2{
-          width: 11%;
+          display: none;
       }
       #aperçu iframe{
           height: auto;

@@ -142,13 +142,14 @@ header .dropdown:hover .content a {
 
 .first-part{
   height: 100vh;
-  background: url(../ASSETS/bakaa_principale.jpg) no-repeat;
+  /* background: url(../ASSETS/bakaa_principale.jpg) no-repeat;
   background-size: cover;
-  background-position-y: -12rem;
-  transition: ease;
+  background-position-y: -12rem; */
+  background: linear-gradient(0deg, rgba(172,185,255,1) 0%, rgba(212,220,254,1) 48%, rgba(255,255,255,1) 100%);
+  /* transition: ease;
   animation: animatedBackground 1.7s linear;
-  position: relative;
-  top: 15vh;
+  position: relative; */
+  /* top: 15vh; */
 
 }
 @keyframes animatedBackground {
@@ -349,6 +350,36 @@ filter: blur(4px);
   transition: 0.4s ease-in-out;
 }
 
+.imagePrincipale1{
+  padding-top: 20vh;
+  user-select: none;
+}
+.imagePrincipale1 h3{
+font-family: "Orbitron", sans-serif;
+text-align: center;
+color: #D2DAFE;
+margin: 10px;
+font-size: 105px;
+
+text-shadow: 4px 4px 6px rgb(0, 0, 0);
+transform: scale(0.94);
+text-shadow: 4px 4px 6px rgb(129 126 126 / 50%);
+}
+
+.deuxiemeTrait {
+height: 10px;
+width: 35%;
+margin: -3px auto;
+/* auto=centrer */
+background-color: #C5D0FE;
+border: black;
+text-shadow: 4px 4px 6px rgb(0 0 0 / 30%);
+
+}
+.Jap{
+color:#B7C3FF ;
+}
+
 /* *************************Présentation************************* */
 
 #présentation {
@@ -372,6 +403,7 @@ filter: blur(4px);
   font-size: 2rem;
   width: 100%;
   text-align: center;
+  font-weight: bold;
   
 
 }
@@ -760,11 +792,11 @@ footer button {
 }
 
 @media screen and (max-width: 1050px) {
-  .first-part{
+  /* .first-part{
     background-position-x: center;
     background-position-y: 15rem;
 
-  }
+  } */
   #logo,
   .dropdown,
   #contact,
@@ -860,6 +892,12 @@ footer button {
   }
   #textIntro{
     font-size: 1.5rem;
+  }
+  .imagePrincipale1{
+    padding-top: 15vh;
+  }
+  .imagePrincipale1 h3{
+    font-size: 65px;
   }
 }
 

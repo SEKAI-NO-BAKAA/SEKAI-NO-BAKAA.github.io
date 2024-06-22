@@ -212,7 +212,9 @@ button:hover {
   cursor:pointer ;
   color: black;
 }
-
+.mainSection{
+  padding-top: 30vh;
+}
 /* carte AMV */
 
 div.gallery {
@@ -232,6 +234,7 @@ div.gallery {
     list-style-type:none;
     color:#FFAFAF;
     text-decoration: none; 
+    font-size: 2rem;
   }
   div.gallery img:hover {
     background-color: white;

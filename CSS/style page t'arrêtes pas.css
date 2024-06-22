@@ -27,26 +27,25 @@ ul {
     --navbar-height: 8vh; /* Déclaration de la variable CSS pour la hauteur de la navbar */
     --font-size:1rem;
     }
-.light-mode {
-    --navbar-color: #222;
-    --navbar-bg-color: #F0F0F0;  
-}
+
 .dark-mode {
     --navbar-color: #FFF;
-    --navbar-bg-color: rgb(26, 26, 26);  
+    --navbar-bg-color: rgb(9 28 41);  
 }
-
+body {
+  background-color: rgb(9 28 41);
+}
 .navbar {  
   display:flex;
   align-items:center; 
   justify-content:space-between;   
   padding:10px;
   font-size:1.1rem;
-  background:rgb(9 28 41);
+  background:var(--navbar-bg-color);
   color:var(--navbar-color);
   height: var(--navbar-height);
   box-shadow: 0 0 24px 0 rgba(0,0,0,.9);
- 
+  animation: transi-head .5s;
 }
 .navbar__logo{
   animation: transi-head 1s ;
@@ -76,7 +75,7 @@ ul {
   display:none;
 }
     .first-part-presentation{
-        height: calc(100vh -  var(--navbar-height) );
+       
         background: rgb(3,25,41);
 background: linear-gradient(180deg, rgba(3,25,41,1) 0%, rgba(22,104,143,1) 100%);
 
@@ -89,7 +88,7 @@ background: linear-gradient(180deg, rgba(3,25,41,1) 0%, rgba(22,104,143,1) 100%)
 #imageson{
     display: table;
     position: relative;
-   
+   top: 70px;
     width: 100%;
     /* background-color: bisque; */
     height: 500px;
@@ -171,16 +170,18 @@ transform: scale(1.1);
         width: 51%;
         font-size: 3rem;
     }
+    
     #collaborateurs {
-        display: table;
-        width: 100%;
-        position: relative;
-        top: 7vh;
-        /* background-color: bisque; */
-        height: 100px;
-        margin-bottom: 6rem;
-        visibility: hidden;
-    }
+      display: table;
+      width: 100%;
+      position: relative;
+      top: 70px;
+      /* background-color: bisque; */
+      height: 100px;
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+      visibility: hidden;
+  }
     #collaborateurs .collab1,
     #collaborateurs .collab2,
     #collaborateurs .collab3,
@@ -227,11 +228,13 @@ transform: scale(1.1);
   
 }
 .second-part-presentation{
-  height: 100vh;
+  
   background: rgb(22,104,143);
 background: linear-gradient(180deg, rgba(22,104,143,1) 0%, rgba(67,142,179,1) 100%);
+padding-top: 11vh;
 }   
 .lyrics{
+  padding-top: 10vh;
   background: rgb(67,142,179);
 background: linear-gradient(180deg, rgba(67,142,179,1) 0%, rgba(152,185,201,1) 100%);
 }
@@ -422,7 +425,7 @@ width: 4%;
   text-align: center;
   width: 100%;
   height: auto;
-font-size: 3vw;
+font-size: 2.5vw;
 }
 #refrain{
 display: block;
@@ -430,14 +433,14 @@ text-align: center;
 height: auto;
 
 width: 100%;
-font-size: 3vw;
+font-size: 2.5vw;
 }
 
 #vidéo{
 padding-bottom: 50px;
 position: relative;
 display: table;
-
+top: 70px;
 width: 100%;
 padding-top: 50px;
 height: auto;
@@ -449,7 +452,7 @@ text-align: center;
 height: auto;
 
 width: 100%;
-font-size: 3vw;
+font-size: 2.5vw;
 }
 
 #refrain2{
@@ -458,7 +461,7 @@ text-align: center;
 height: auto;
 
 width: 100%;
-font-size: 3vw;
+font-size: 2.5vw;
 }
 
 
@@ -468,7 +471,7 @@ text-align: center;
 height: auto;
 
 width: 100%;
-font-size: 3vw;
+font-size: 2.5vw;
 }
 
 #prerefrain{
@@ -477,7 +480,7 @@ text-align: center;
 height: auto;
 
 width: 100%;
-font-size: 3vw;
+font-size: 2.5vw;
 }
 
 
@@ -487,7 +490,7 @@ text-align: center;
 height: auto;
 
 width: 100%;
-font-size: 3vw;
+font-size: 2.5vw;
 }
 
 
@@ -499,6 +502,8 @@ width: 100%;
 #paroles,#paroles2,#paroles1,#paroles3{
 padding-bottom: 0px;
 }
+
+
 
 }   
 @media screen and (min-width:768px) {
@@ -615,8 +620,7 @@ padding-bottom: 0px;
     .show-nav .second {      
       transition: all 1.2s ease-out;
     }
-    
-  
+   
   /* ****si je rajoute des liens**** */
   /* .show-nav .third {      
     transition: all 1.3s ease-out;
@@ -630,6 +634,12 @@ padding-bottom: 0px;
     .title, .auteur h2{
       font-size: 2em;
     }
+    #collaborateurs {
+    
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+     
+  }
     #collaborateurs {
       margin-top: 2rem;
     }
