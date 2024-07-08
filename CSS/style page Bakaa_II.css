@@ -126,6 +126,7 @@ ul {
   max-width: 773px;
   overflow: hidden;
   display: inline-block;
+  z-index: 0;
 }
 .miniature{
     width: 100%;
