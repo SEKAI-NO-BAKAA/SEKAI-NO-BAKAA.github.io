@@ -244,7 +244,7 @@ div.gallery {
   
   div.gallery img {
     width: 30vw;
-    height: 25vw;
+    height: 31vh;
     visibility: hidden;
   }
   
@@ -277,7 +277,7 @@ div.gallery {
       
   div.gallery img {
     width: 40vw;
-    height: 35vw;
+    height: 25vh;
     margin-left: 25px;
     margin-right: 25px;
     
@@ -295,7 +295,7 @@ div.gallery {
       
   div.gallery img {
     width: 80vw;
-    height: 55vw;
+    height: 30vh;
     margin-left: 25px;
     margin-right: 25px;
     
@@ -307,7 +307,7 @@ div.gallery {
       
   div.gallery img {
     width: 800px;
-    height: 550px;
+    height: 450px;
   margin-left: 35px;
   margin-right: 35px;
   }

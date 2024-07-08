@@ -31,6 +31,10 @@ ul {
     --navbar-color: #222;
     --navbar-bg-color: #F0F0F0;  
 }
+.dark-mode {
+  --navbar-color: #222;
+  --navbar-bg-color: #F0F0F0;;  
+}
 
 
 .navbar {  
